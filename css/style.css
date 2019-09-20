@@ -27,6 +27,7 @@ h2 {
     float: right;
     margin-right: 15px;
     top: 15px;
+    padding: 10px;
 }
 
 footer {
@@ -45,4 +46,14 @@ footer a {
 
 #lastUpdated {
     color: #ffc857;
+}
+
+@media only screen and (max-width: 768px) {
+    #intro {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
