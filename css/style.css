@@ -3,6 +3,11 @@ body {
 }
 
 #wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header, main, footer {
     width: 85%;
     margin: 0 auto;
 }
@@ -50,10 +55,14 @@ footer a {
 
 @media only screen and (max-width: 768px) {
     #intro {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
+    }
+
+    #myPhoto {
+        height: 150px;
     }
 }
