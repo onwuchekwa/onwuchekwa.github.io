@@ -1,5 +1,6 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8em;
 }
 
 #wrapper {
@@ -12,32 +13,32 @@ header, main, footer {
     margin: 0 auto;
 }
 
-#intro {
-    background-color: #1f2041;
+header nav {
+    background-color: #1f2041;   
     color: #ffffff;
-    font-size: 2em;
-    line-height: 1.3em;
-    padding: 1em;
+    border-radius: 10px;
+    padding: 0.75em;
+    margin: 0.75rem;
     text-align: center;
+    vertical-align: middle;
+}
+
+header img {    
+    box-shadow: 0 0 10px #1f2041;
     border-radius: 10px;
 }
 
-h2 {
+h1 { 
     font-size: 1.5em;
-    line-height: 1.3em;
 }
 
-#myPhoto {
-    position: relative;
-    float: right;
-    margin-right: 15px;
-    top: 15px;
-    padding: 10px;
+h2 {
+    font-size: 1.2em;
 }
 
 footer {
     background-color: #1f2041;
-    padding: 1em;
+    padding: 0.75em;
     color: #ffffff;
     font-size: 0.9em;
     text-align: center;
@@ -51,18 +52,4 @@ footer a {
 
 #lastUpdated {
     color: #ffc857;
-}
-
-@media only screen and (max-width: 768px) {
-    #intro {
-        font-size: 1.2em;
-    }
-
-    h2 {
-        font-size: 1.1em;
-    }
-
-    #myPhoto {
-        height: 150px;
-    }
 }
