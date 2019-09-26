@@ -1,0 +1,32 @@
+#card-container {
+    padding: 0;
+    margin: 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+ }
+ 
+ .card {
+    background: tomato;
+    padding: 5px;
+    width: 50%;
+    height: 150px;
+    margin: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+ }  
+
+ @media only screen and (min-width: 32.5em) {
+    .card {
+        width: 30%
+    }
+ }
