@@ -16,14 +16,14 @@
     background: #1f2041;
     padding: 5px;
     width: 85%;
-    height: 500px;
     margin: 10px;
-
+    text-align: center;
+   /*
     line-height: 150px;
     color: white;
     font-weight: bold;
     font-size: 3em;
-    text-align: center;
+    */
  }  
 
  @media only screen and (min-width: 32.5em) {
