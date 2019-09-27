@@ -14,20 +14,60 @@
  
  .card {
     background: #1f2041;
-    padding: 5px;
     width: 85%;
     margin: 10px;
     text-align: center;
-   /*
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    */
+    color: #ffc857;
+    line-height: 1.5em;
  }  
+
+ .img1 {
+    border-radius: 30px;    
+    padding: 10px;
+    width: 150px;
+    height: auto;
+ }
+
+ .subheader {
+   font-size: 1em;
+   background-color: #ffc857;
+   padding: 10px;
+   color: #1f2041
+ }
+
+ .header-3 {
+    padding: 5px;
+    font-size: 0.95em;
+ }
+
+ .pspec {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 0.85em;
+    line-height: 1.5em;
+ }
+
+ .web-link a {
+   background-color: #ffc857; 
+   color: #1f2041; 
+   padding: 10px; 
+   text-align: center; 
+   display: inline-block;
+   text-decoration: none; 
+   font-size: 0.90em;
+   cursor: pointer; 
+   border-radius: 10px;
+   margin-bottom: 20px;
+ }
 
  @media only screen and (min-width: 32.5em) {
     .card {
         width: 30%
+    }
+
+    .img1 {
+       width: 200px;
+       height: auto;
+
     }
  }
