@@ -3,7 +3,7 @@
     margin: 30px 0 10px 0;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
  }
  
  .grid-item {
@@ -62,9 +62,26 @@
  }
 
  @media only screen and (min-width: 32.5em) {
-    .img1 {
-       width: 200px;
-       height: auto;
+   .img1 {
+      width: 200px;
+      height: auto;
+   }
 
+   .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+   }
+   
+   .grid-container div:nth-child(3) {
+      grid-column: span 2;
+    }    
+ }
+
+ @media only screen and (min-width: 60em) {
+   .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .grid-container div:nth-child(3) {
+      grid-column: span 1;
     }
  }
