@@ -4,6 +4,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
  }
  
  .grid-item {
