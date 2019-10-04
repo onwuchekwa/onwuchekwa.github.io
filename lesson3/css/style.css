@@ -1,52 +1,97 @@
-@charset "UTF-8"; /* Not Neccessary */
-/*bluegrey matter #637f80 light #536872 #708090 #536878 #36454f dark */
+/*
+    ==================================================
+    Fonts
+    ==================================================
+    Company Name: font-family: 'Roboto', sans-serif;
+    Headers: font-family: 'Open Sans', sans-serif;
+    Navigation: font-family: 'Montserrat', sans-serif;
+    Paragraphs: font-family: 'Ubuntu', sans-serif;
+    Footer: font-family: 'Share Tech Mono', monospace;
+    ==================================================
+
+    ==================================================
+    Colors: 
+    ==================================================
+    Valhalla: #1f2041
+    Golden Tainoi: #ffc857
+    Dark Red: #a50404
+    Seal Brown: #2b0b0b
+    White: #ffffff
+*/
+
+
+
 body {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Phone or Baseline Views ****************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    background-color: #ffc857;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    width: 100%;
+}
 
 header, footer {
     background-color: #1f2041;
     display: flex;
     flex-flow: column;
-    color: #fff;
+    color: #ffc857;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    border-radius: 10px;
 }
 
 header, nav, main, footer {
-    max-width: 767px;
+    max-width: 75%;
     margin: 0 auto;
 }
 
 header span {
     text-align: center;
     line-height: 1.3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 header img {
     width: 100px;
-    background-color: #1f2041;
-    border: 2px white solid;
+    position: relative;
+    background-color: #ffc857;
+    border: 2px #1f2041 solid;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #ffc857;
+    box-shadow: 5px 5px 5px #2b0b0b;
 }
 
 h1 {
     font-size: 1.5rem;
 }
 
-h2 {
-    color: #36454f;
+h2, h3, h4 {
+    color: #ffc857;
+}
+
+#company-name {    
+    color: #1f2041;    
+    font-size: 2.5em;
+}
+
+#company-name span {
+    color: #a50404;
 }
 
 nav {
     background-color: #ffc857;
     text-align: center;
-    box-shadow: 0 2px 15px gray;
+    box-shadow: 0 2px 15px #2b0b0b;
 }
 
 nav ul {
@@ -58,38 +103,141 @@ nav ul {
 
 nav li a {
     display: block;
-    color: #111;
+    color: #1f2041;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
-    background-color: #bbb;
-    color: #36454f
+    background-color: #1f2041;
+    color: #ffc857;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #2b0b0b;
 }
 
 .active {
+    color: #a50404;
+}
+
+#main-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.80rem;
+}
+
+main article, main aside {
+    margin: 0.5rem;
+    color: #ffffff;
+    border: 2px solid #ffc857;
+    padding: 0 1rem;
+    background-color: #1f2041;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+}
+
+article a {
+    color: #ffffff;
+}
+
+main aside {
+    background-color: #ffffff;
+    display: none;
+    border: 2px solid #1f2041; 
+}
+
+aside .aside-header {
     color: #1f2041;
 }
 
-main article {
-    margin: 0.5rem;
-    border: 1px solid #bbb;
-    padding: 0 1rem;
-    background-color: #eee;
-}
-
-main picture {
-    display: none;
-    margin: 0.5rem;
+main article:hover, main aside:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
 }
 
 footer {
     flex: 0 1 100%;
     height: 2rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Target Audience and Personas Style ****************************************/
+#target-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.80rem;
+}
+
+.target-article {
+    margin: 0.5rem;
+    color: #ffffff;
+    border: 2px solid #ffc857;
+    padding: 0 1rem;
+    background-color: #1f2041;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+}
+
+.persona-name {
+    font-size: 1.5em;
+}
+
+.persona-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+b {
+    color: #ffc857;
+}
+
+.accordion {
+    background-color: #ffc857;
+    color: #1f2041;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+}
+
+.accordion-active, .accordion:hover {
+    background-color: #2b0b0b;
+    color: #ffffff;
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    background-color: #ffffff;
+    color: #a50404;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0 0 10px 0;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #1f2041;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion-active:after {
+    content: '\2796';
 }
 
 /* Tablet Views ****************************************/
@@ -131,22 +279,36 @@ footer {
         font-size: 1rem;
     }
 
-    main {
+    
+    #main-container {
         grid-template-columns: 1fr 1fr;
     }
+    
 
     article:nth-child(3) {
         grid-column: span 2;
     }
 
-    main picture {
+    main aside {
         display: block;
     }
 
-    main picture img {
+    main aside img {
         width: 100%;
         height: auto;
-        border: 1px solid #bbb;
+    }
+
+    /* Target Audience and Personas Style ****************************************/
+    #target-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .target-article:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .target-article:nth-child(3) {
+        grid-column: span 1;
     }
   }
  
@@ -155,10 +317,11 @@ footer {
     nav a {
         font-size: 1.1rem;
     }
-
-    main {
+    
+    #main-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    
 
     article:nth-child(3) {
         grid-column: span 1;
@@ -168,12 +331,28 @@ footer {
         font-size: 2rem;
     }
 
+    header {
+        flex-flow: unset;
+    }
+
     header img {
         width: 120px;
+        object-fit: contain;
+        align-self: flex-start;
     }
 
     header span {
+        flex: 1 1 auto;
         text-align: center;
         line-height: 0.5em;
+    }
+
+    /* Target Audience and Personas Style ****************************************/
+    #target-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .target-article:nth-child(1) {
+        grid-column: span 2;
     }
   }
