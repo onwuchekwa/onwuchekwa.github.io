@@ -168,6 +168,10 @@ footer {
     margin-bottom: 10px;
 }
 
+footer a {
+    color: #ffc857;
+}
+
 /* Target Audience and Personas Style ****************************************/
 #target-container {
 	display: grid;
