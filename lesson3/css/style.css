@@ -249,7 +249,7 @@ b {
 	font-size: 0.80rem;
 }
 
-.color-article {
+.color-article, .color-article-white {
     margin: 0.5rem;
     color: #ffffff;
     border: 2px solid #ffc857;
@@ -261,9 +261,67 @@ b {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
+.color-article-white {   
+    background-color: #ffffff;
+}
+
+.color-article-white h2 {
+    color: #1f2041;
+}
 .center {
     text-align: center;
     vertical-align: middle;
+}
+
+.color-grid {
+    display: grid;
+    border: 2px solid #ffc857;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    margin-bottom: 15px;
+}
+
+.primary {     
+    line-height: 0.20em;
+}
+
+#primary-color {
+    background-color: #1f2041;
+}
+
+#text-color {
+    background-color: #ffffff;
+}
+
+#link-color {
+    background-color: #a50404;
+}
+
+#background-color {
+    background-color: #ffc857;
+}
+
+#accent-color {
+    background-color: #2b0b0b;
+}
+
+#highlight-color {
+    background-color: #1f2041;
+}
+
+.gold-color {
+    color: #ffc857;
+}
+
+.white-color {
+    color: #ffffff;
+}
+
+.red-color {
+    color: #a50404;
+}
+
+.blue-color {
+    color: #1f2041;
 }
 
 .color-image {
@@ -271,6 +329,38 @@ b {
     height: auto;
     border: 2px solid #ffc857;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+/* Typography Style ****************************************/
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+.table-grid > span {
+    padding: 10px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.table-header {
+    background-color: #ffffff;
+    color: #1f2041;
+}
+
+.odd-row {
+    background-color: #ffc857;
+    color: #2b0b0b;
+}
+
+
+.even-row {
+    background-color: #1f2041;
+    color: #ffffff;
 }
 
 /* Navigation Style ****************************************/
