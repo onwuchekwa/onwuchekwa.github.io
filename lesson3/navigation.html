@@ -8,17 +8,15 @@
         <meta name="author" content="Sunday O. Onwuchekwa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap" rel="stylesheet"> 
+        <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap" rel="stylesheet">--> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <!--<link rel="stylesheet" href="css/normalize.css">-->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>        
         <header>
-            <img src="assets/accra_weather_agency.png" alt="logo">
-            <span>
-                <h1>Ghana Meteorological Agency</h1>
-            </span>
+            <img src="assets/accra_weather_agency.png" alt="logo">            
+            <h1><span>Ghana Meteorological Agency</span></h1>            
         </header>
         <nav>
             <ul>
@@ -33,11 +31,44 @@
         <main>
             <div id="container">
                 <h1 id="company-name">Navi<span>gation</span></h1> 
+                <div id="target-container">
+                    <article class="nav-article">
+                        <h2>Navigation</h2>
+                        <p>
+                            Navigation will sit near the top of the page, between the header and the main elements. It will have the following characteristics:
+                            <ul>
+                                <li>
+                                    Unselected item: It will be Golden Tainoi (#ffc857) background with Valhalla (#1f2041) for the text.
+                                </li>
+                                <li>
+                                    Hovered Item: Reversed color scheme, with Valhalla (#1f2041) background with Golden Tainoi (#ffc857) for the text.
+                                </li>
+                                <li>
+                                    Selected Item: It will be Golden Tainoi (#ffc857) background with dark red (#a50404) for the text.
+                                </li>
+                            </ul>
+                            See example below:
+                        </p>
+                        <h3>Unselected Item</h3>
+                        <img class="nav-img" src="assets/unselected.png" alt="unselected">
+
+                        <h3>Hovered Item</h3>
+                        <img class="nav-img" src="assets/hovered.png" alt="hovered">
+
+                        <h3>Selected Item</h3>
+                        <img class="nav-img" src="assets/selected.png" alt="selected">
+                    </article>
+
+                    <article class="nav-article">
+                            <h2>Site Map</h2>
+                            <img class="nav-img-1" src="assets/nav-site-map.png" alt="site-map">
+                        </article>
+                </div>
             </div>
         </main>
     
         <footer>
-            <p>&copy; <span id="current-year"></span> &nbsp; .:|:. &nbsp; Sunday O. Onwuchekwa &nbsp; .:|:. &nbsp; Brigham Young University - Idaho</p>
+            <p>&copy; <span id="current-year"></span> &nbsp; .:|:. &nbsp; Sunday O. Onwuchekwa &nbsp; .:|:. &nbsp; Brigham Young University - Idaho<br><span id="lastUpdated"></span></p>
         </footer>
         <script src="js/myScript.js"></script>
     </body>

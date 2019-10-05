@@ -18,8 +18,7 @@
     Seal Brown: #2b0b0b
     White: #ffffff
 */
-
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
 
 body {
     font-size: 18px;
@@ -47,6 +46,7 @@ header, footer {
     color: #ffc857;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 10px;
     border-radius: 10px;
 }
@@ -56,7 +56,7 @@ header, nav, main, footer {
     margin: 0 auto;
 }
 
-header span {
+header h1 {
     text-align: center;
     line-height: 1.3rem;
     font-family: 'Roboto', sans-serif;
@@ -161,9 +161,10 @@ main article:hover, main aside:hover {
 
 footer {
     flex: 0 1 100%;
-    height: 2rem;
     font-size: 0.85rem;
     font-family: 'Share Tech Mono', monospace;
+    vertical-align: middle;
+    margin-bottom: 10px;
 }
 
 /* Target Audience and Personas Style ****************************************/
@@ -239,6 +240,106 @@ b {
 .accordion-active:after {
     content: '\2796';
 }
+/* Color Scheme Style ****************************************/
+#color-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.80rem;
+}
+
+.color-article {
+    margin: 0.5rem;
+    color: #ffffff;
+    border: 2px solid #ffc857;
+    padding: 0 1rem;
+    background-color: #1f2041;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.color-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffc857;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+}
+
+/* Navigation Style ****************************************/
+.nav-img {
+    width: 100%;
+    border: 2px solid #ffc857;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+}
+
+.nav-img-1 {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries ****************************************/
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px0) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        margin: 10px;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 2px solid #ffc857;
+    }
+
+    td {
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    #typo-table td:nth-of-type(1):before {
+        content: "Object/Item";
+    }
+
+    #typo-table td:nth-of-type(2):before {
+        content: "Font";
+    }
+
+    #typo-table td:nth-of-type(3):before {
+        content: "Size";
+    }
+
+    #typo-table td:nth-of-type(4):before {
+        content: "Color";
+    }
+
+    #color-table td:nth-of-type(1):before {
+        content: "Semantic";
+    }
+
+    #color-table td:nth-of-type(2):before {
+        content: "Color Code";
+    }
+}
 
 /* Tablet Views ****************************************/
  @media only screen and (min-width: 37.5em) {
@@ -310,6 +411,37 @@ b {
     .target-article:nth-child(3) {
         grid-column: span 1;
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 10px 0;
+    }
+    
+    tr:nth-of-type(odd) {
+        background: #ffc857;
+        color: #1f2041;
+    }
+    
+    th {
+        background: #ffffff;
+        font-weight: bolder;
+    }
+    
+    td, th {
+        padding: 10px;
+        border: 2px solid #a50404;
+        text-align: left;
+    }  
+      
+    /* Navigation ****************************************/
+    .nav-article:nth-of-type(1) {
+        grid-column: span 2;
+    }
+
+    .nav-article:nth-of-type(2) {
+        grid-column: span 2;
+    }
   }
  
   /* Desktop Views ****************************************/
@@ -322,7 +454,6 @@ b {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-
     article:nth-child(3) {
         grid-column: span 1;
     }
@@ -341,7 +472,7 @@ b {
         align-self: flex-start;
     }
 
-    header span {
+    header h1 {
         flex: 1 1 auto;
         text-align: center;
         line-height: 0.5em;
@@ -353,6 +484,20 @@ b {
     }
 
     .target-article:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    /* Color Scheme ****************************************/
+    #color-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Navigation ****************************************/
+    .nav-article:nth-of-type(1) {
+        grid-column: span 2;
+    }
+
+    .nav-article:nth-of-type(2) {
         grid-column: span 2;
     }
   }

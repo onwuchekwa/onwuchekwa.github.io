@@ -8,17 +8,15 @@
         <meta name="author" content="Sunday O. Onwuchekwa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap" rel="stylesheet"> 
+        <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap" rel="stylesheet">--> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <!--<link rel="stylesheet" href="css/normalize.css">-->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>        
         <header>
-            <img src="assets/accra_weather_agency.png" alt="logo">
-            <span>
-                <h1>Ghana Meteorological Agency</h1>
-            </span>
+            <img src="assets/accra_weather_agency.png" alt="logo">            
+            <h1><span>Ghana Meteorological Agency</span></h1>            
         </header>
         <nav>
             <ul>
@@ -33,11 +31,64 @@
         <main>
             <div id="container">
                 <h1 id="company-name">Typo<span>graphy</span></h1> 
+                <div id="target-container">
+                    <article class="target-article">
+                        <h2>Typography Table</h2>
+                        <table id="typo-table">
+                            <thead>
+                                <tr>
+                                    <th>Object/Item</th>
+                                    <th>Font</th>
+                                    <th>Size</th>
+                                    <th>Color</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Default Paragraph Text</td>
+                                    <td>font-family: 'Ubuntu', sans-serif; font-weight: Normal; </td>
+                                    <td>1.1em</td>
+                                    <td>#ffffff</td>
+                                </tr>
+                                <tr>
+                                    <td>Heading Level 1 (h1)</td>
+                                    <td>font-family: 'Roboto', sans-serif; font-weight: Normal;</td>
+                                    <td>2.5em</td>
+                                    <td>#ffc857</td>
+                                </tr>
+                                <tr>
+                                    <td>Heading Level 2 (h2)</td>
+                                    <td>font-family: 'Open Sans', sans-serif; font-weight: Normal;</td>
+                                    <td>1.5em</td>
+                                    <td>#ffc857</td>
+                                </tr>
+                                <tr>
+                                    <td>Heading Level 3 (h3)</td>
+                                    <td>font-family: 'Open Sans', sans-serif; font-weight: Normal;</td>
+                                    <td>1.3em</td>
+                                    <td>#ffc857</td>
+                                </tr>
+                                <tr>
+                                    <td>Navigation Anchor Selected</td>
+                                    <td>font-family: 'Montserrat', sans-serif; font-weight: Normal;</td>
+                                    <td>1.2em</td>
+                                    <td>#a50404</td>
+                                </tr>
+                                <tr>
+                                    <td>Navigation Anchor Unselected</td>
+                                    <td>font-family: 'Montserrat', sans-serif; font-weight: Normal;</td>
+                                    <td>1.2em</td>
+                                    <td>#1f2041</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
             </div>
         </main>
     
         <footer>
-            <p>&copy; <span id="current-year"></span> &nbsp; .:|:. &nbsp; Sunday O. Onwuchekwa &nbsp; .:|:. &nbsp; Brigham Young University - Idaho</p>
+            <p>&copy; <span id="current-year"></span> &nbsp; .:|:. &nbsp; Sunday O. Onwuchekwa &nbsp; .:|:. &nbsp; Brigham Young University - Idaho<br><span id="lastUpdated"></span></p>
         </footer>
         <script src="js/myScript.js"></script>
     </body>
