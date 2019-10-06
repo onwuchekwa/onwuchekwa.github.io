@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #2b0b0b;
+    margin: 10px;
+}
+
+#content-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffc857;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header, footer {
+    background-color: #1f2041;
+    display: flex;
+    flex-flow: column;
+    color: #ffc857;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+}
+
+header img {
+    width: 100px;
+    position: relative;
+    background-color: #ffc857;
+    border: 2px #1f2041 solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #2b0b0b;
+}
+
+header, nav, main, footer {
+    margin: 0 auto;
+    width: 90%;
+}
+
+nav {
+    text-align: center;
+    box-shadow: 0 2px 15px #2b0b0b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: #1f2041;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    background-color: #1f2041;
+    color: #ffc857;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #2b0b0b;
+}
+
+.active {
+    color: #a50404;
+}
+
+
+main {
+    display: grid;
+	grid-template-columns: 1fr;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 15px;
+}
+
+footer {
+    flex: 0 1 100%;
+    font-size: 0.65em;
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+footer a {
+    color: #ffc857;
+}

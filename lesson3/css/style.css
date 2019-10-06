@@ -91,7 +91,7 @@ h2, h3, h4 {
 nav {
     background-color: #ffc857;
     text-align: center;
-    box-shadow: 0 2px 15px #2b0b0b;
+    box-shadow: 0 5px 15px #2b0b0b;
 }
 
 nav ul {
@@ -380,64 +380,6 @@ b {
     height: auto;
 }
 
-/* Media Queries ****************************************/
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-        margin: 10px;
-    }
-
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    tr {
-        border: 2px solid #ffc857;
-    }
-
-    td {
-        border: none;
-        border-bottom: 2px solid #ffffff;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
-
-    #typo-table td:nth-of-type(1):before {
-        content: "Object/Item";
-    }
-
-    #typo-table td:nth-of-type(2):before {
-        content: "Font";
-    }
-
-    #typo-table td:nth-of-type(3):before {
-        content: "Size";
-    }
-
-    #typo-table td:nth-of-type(4):before {
-        content: "Color";
-    }
-
-    #color-table td:nth-of-type(1):before {
-        content: "Semantic";
-    }
-
-    #color-table td:nth-of-type(2):before {
-        content: "Color Code";
-    }
-}
-
 /* Tablet Views ****************************************/
  @media only screen and (min-width: 37.5em) {
     /* Horizontal Menu Example */
@@ -449,35 +391,11 @@ b {
     nav ul li {
         flex: 1 1 100%;
     }
-    
-
-    /* Grid ****************************************/
-    /*
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    }
-    */
-
-    /* Inline-Block                 */
-    /*
-        nav {text-align: center;}
-        nav li {display: inline-block;}
-    */
-
-    /* Float                        */
-    /*
-        nav li {float: left; marigin-right: 15px;}
-        main {clear: both;}
-    */
-
-    /*********************************************************/
 
     nav a {
         font-size: 1rem;
     }
-
-    
+ 
     #main-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -512,28 +430,6 @@ b {
     .target-article:nth-child(3) {
         grid-column: span 1;
     }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0 0 10px 0;
-    }
-    
-    tr:nth-of-type(odd) {
-        background: #ffc857;
-        color: #1f2041;
-    }
-    
-    th {
-        background: #ffffff;
-        font-weight: bolder;
-    }
-    
-    td, th {
-        padding: 10px;
-        border: 2px solid #ffffff;
-        text-align: left;
-    }  
 
     /* Typography ****************************************/
     .table-grid {
