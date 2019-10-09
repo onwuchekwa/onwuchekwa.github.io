@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ghana Meteorological Agency portal for Sunday Ogbonnaya Onwuchekwa in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author" content="Sunday O. Onwuchekwa">
+    <title>Ghana Meteorological Agency | Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="content-container">
+        <!-- HEADER -->
+        <header>
+            <picture>
+                <img src="image/ghanameteoagency.png" alt="Ghana Meteo Logo">
+            </picture>
+            <section class="sec-company-info">
+                <h1>Ghana Meteorological Agency</h1>
+                <div class="motto">Your source for weather information</div>
+            </section>
+        </header>
+        <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <ul class="main-nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="preston-4.html" >Preston</a></li>
+                <li><a href="#">Soda Spring</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+       <!-- MAIN -->
+        <main>
+            <h2>Preston <span>Idaho</span></h2>            
+            <section class="content-box">Hero image/weather summary</section>
+            <section class="content-box">5 Day Forecast</section>
+            <section class="content-box">Article</section>
+            <section class="content-box">Contact Information</section>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                &copy;&nbsp;<span id="current-year"></span>&nbsp;.:|:.&nbsp; Sunday O. Onwuchekwa &nbsp;.:|:.&nbsp; Brigham Young University - Idaho<br>
+                <span id="todayDate"></span><br>
+                <a href="../index.html">Return to CIT 230: Assignment Portal</a>
+            </p>
+        </footer>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+</html>

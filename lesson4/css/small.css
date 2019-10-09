@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
+
+body {
+	background-color: #2b0b0b;
+	padding: 0;
+	margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+}
+
+#content-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffc857;
+    padding: 10px;
+}
+
+header, footer {
+	background-color: #1f2041;
+	padding: 5px;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header img {
+	width: 70px;
+	height: auto;
+}
+
+.sec-company-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.sec-company-info h1 {
+	font-size: 1.1rem;
+    margin: 0 0 0 15px;
+    color: #ffc857;
+}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #ffffff;
+	margin: 8px 0;
+	font-size: .7rem;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-shadow: 0 5px 10px #2b0b0b;
+}
+
+.main-nav li:first-child {
+    display: block;
+    background-color: #2b0b0b;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.main-nav li {
+	display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    color: #1f2041;
+    text-align: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;    
+    border-top: 1px solid rgba(31,32,65, 0.3)
+}
+
+nav ul li.active a {
+    background-color: rgba(31,32,65, 0.2);
+    color: #a50404;
+}
+
+nav ul li a:hover {
+    background-color: rgba(43, 45, 102, 0.4);
+    color: #ffc857;
+    box-shadow: 5px 5px 5px #2b0b0b;
+}
+
+.main-nav li:first-child a {
+    color: #ffc857;
+}
+
+.main-nav li:first-child a:hover {
+    background-color: rgba(43,11,11, 0);
+}
+
+.responsive li {
+	display: block;
+}
+
+header, nav, main, footer {
+    margin: 0 auto;
+    width: 95%;
+}
+
+main {
+    padding: 5px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #1f2041;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 span {
+    color: #a50404;
+}
+
+.content-box {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #1f2041;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+footer {
+    flex: 0 1 100%;
+    font-size: 0.75em;
+    font-family: 'Share Tech Mono', monospace;    
+    color: #ffc857;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+footer a {
+    color: #ffc857;
+}
