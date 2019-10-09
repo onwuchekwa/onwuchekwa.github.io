@@ -100,7 +100,7 @@ nav ul li a:hover {
 }
 
 .main-nav li:first-child a:hover {
-    background-color: rgba(43,11,11, 0);
+    background-color: rgba(43,11,11, 0.6);
 }
 
 .responsive li {
@@ -139,7 +139,8 @@ h2 span {
     padding: 15px;
     background-color: #1f2041;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px 0 rgba(43,11,11, 0.6);
 }
 
 footer {
