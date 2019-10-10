@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|exit-button+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
 
 body {
 	background-color: #2b0b0b;
@@ -59,8 +59,21 @@ nav {
     display: block;
     background-color: #2b0b0b;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    padding: 10px;
 }
+
+.main-nav.responsive li:first-child a span.exit-button {
+    font-size : xx-large;
+}
+
+.main-nav.responsive li:first-child a span.exit-button, .main-nav li:first-child a span.hamburger {
+    display : inline;
+}
+
+.main-nav.responsive li:first-child a span.hamburger, .main-nav li:first-child a span.exit-button {
+    display : none;
+} 
 
 .main-nav li {
 	display: none;
@@ -96,6 +109,7 @@ nav ul li a:hover {
 }
 
 .main-nav li:first-child a {
+    border-top: none;
     color: #ffc857;
 }
 
@@ -126,7 +140,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: #1f2041;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'exit-button Sans', sans-serif;
 }
 
 h2 span {
