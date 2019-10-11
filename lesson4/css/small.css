@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|exit-button+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
 
 body {
-	background-color: #2b0b0b;
+	background-color: #ffffff;
 	padding: 0;
 	margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 15px;  
+    width: 100%;
 }
 
 #content-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     background-color: #ffc857;
     padding: 10px;
 }
 
-header, footer {
+header {
 	background-color: #1f2041;
-	padding: 5px;
 	display: flex;
 	align-items:center;
     justify-content:center;
     text-align: center;
-    border-radius: 5px;
 }
 
 header img {
@@ -52,6 +51,7 @@ header img {
 nav {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    background-color: #2b0b0b;
     box-shadow: 0 5px 10px #2b0b0b;
 }
 
@@ -83,28 +83,27 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 nav li a {
     display: block;
-    color: #1f2041;
+    color: #ffc857;
     text-align: center;
     padding: .8rem 2%;
     text-decoration: none;
     font-size: .8em;
     font-family: 'Montserrat', sans-serif;    
-    border-top: 1px solid rgba(31,32,65, 0.3)
+    border-top: 1px solid rgba(255,255,255, 0.3)
 }
 
 nav ul li.active a {
-    background-color: rgba(31,32,65, 0.2);
-    color: #a50404;
+    background-color: rgba(255,200,87, 0.3);
+    color: #ffffff;
 }
 
 nav ul li a:hover {
-    background-color: rgba(43, 45, 102, 0.4);
-    color: #ffc857;
+    background-color: rgba(255,200,87, 0.4);
+    color: rgba(255,255,255, 0.7);
     box-shadow: 5px 5px 5px #2b0b0b;
 }
 
@@ -121,7 +120,12 @@ nav ul li a:hover {
 	display: block;
 }
 
-header, nav, main, footer {
+header, nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
     margin: 0 auto;
     width: 95%;
 }
@@ -147,6 +151,10 @@ h2 span {
     color: #a50404;
 }
 
+h3 {
+    font-size: 1em;
+}
+
 .content-box {
     display: block;
     margin: 10px auto;
@@ -158,12 +166,17 @@ h2 span {
 }
 
 footer {
-    flex: 0 1 100%;
-    font-size: 0.75em;
-    font-family: 'Share Tech Mono', monospace;    
-    color: #ffc857;
-    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.75em;  
     line-height: 1.5em;
+	background-color: #1f2041;  
+    color: #ffc857;
+	display: flex;
+    flex: 0 1 100%;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
 }
 
 footer a {
