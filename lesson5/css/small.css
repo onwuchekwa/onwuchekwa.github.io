@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|exit-button+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
+
+body {
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;  
+    width: 100%;
+}
+
+#content-container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #ffc857;
+    padding: 10px;
+}
+
+header {
+	background-color: #1f2041;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+header img {
+	width: 70px;
+	height: auto;
+}
+
+.sec-company-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.sec-company-info h1 {
+	font-size: 1.1rem;
+    margin: 0 0 0 15px;
+    color: #ffc857;
+}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #ffffff;
+	margin: 8px 0;
+	font-size: .7rem;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #2b0b0b;
+    box-shadow: 0 5px 10px #2b0b0b;
+}
+
+.main-nav li:first-child {
+    display: block;
+    background-color: #2b0b0b;
+    border: none;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.main-nav.responsive li:first-child a span.exit-button {
+    font-size : xx-large;
+}
+
+.main-nav.responsive li:first-child a span.exit-button, .main-nav li:first-child a span.hamburger {
+    display : inline;
+}
+
+.main-nav.responsive li:first-child a span.hamburger, .main-nav li:first-child a span.exit-button {
+    display : none;
+} 
+
+.main-nav li {
+	display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: #ffc857;
+    text-align: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: .8em;
+    font-family: 'Montserrat', sans-serif;    
+    border-top: 1px solid rgba(255,255,255, 0.3)
+}
+
+nav ul li.active a {
+    background-color: rgba(255,200,87, 0.3);
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,200,87, 0.4);
+    color: rgba(255,255,255, 0.7);
+    box-shadow: 5px 5px 5px #2b0b0b;
+}
+
+.main-nav li:first-child a {
+    border-top: none;
+    color: #ffc857;
+}
+
+.main-nav li:first-child a:hover {
+    background-color: rgba(43,11,11, 0.6);
+}
+
+.responsive li {
+	display: block;
+}
+
+header, nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+    width: 95%;
+}
+
+main {
+    padding: 5px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #1f2041;
+    font-family: 'exit-button Sans', sans-serif;
+}
+
+h2 span {
+    color: #a50404;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.content-box {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #1f2041;
+    color: #ffffff;
+    border-radius: 5px;    
+    box-shadow: 0 10px 20px 0 rgba(43,11,11, 0.6);
+}
+
+footer {
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.75em;  
+    line-height: 1.5em;
+	background-color: #1f2041;  
+    color: #ffc857;
+	display: flex;
+    flex: 0 1 100%;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+
+footer a {
+    color: #ffc857;
+}
