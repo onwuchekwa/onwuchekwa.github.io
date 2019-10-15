@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|exit-button+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
-
 body {
 	background-color: #ffffff;
 	padding: 0;
@@ -7,13 +6,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;  
     width: 100%;
-}
-
-#content-container {
-    width: 85%;
-    margin: 0 auto;
-    background-color: #ffc857;
-    padding: 10px;
 }
 
 header {
@@ -26,7 +18,7 @@ header {
 
 header img {
 	width: 70px;
-	height: auto;
+    height: auto;
 }
 
 .sec-company-info {
@@ -128,13 +120,18 @@ header, nav {
 main {
     margin: 0 auto;
     width: 95%;
-}
-
-main {
     padding: 5px;
     text-align: center;
     line-height: 1.5em;
 }
+
+#content-container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #ffc857;
+    padding: 10px;
+}
+
 
 h1 {
     font-family: 'Roboto', sans-serif;

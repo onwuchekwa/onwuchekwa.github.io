@@ -128,9 +128,6 @@ header, nav {
 main {
     margin: 0 auto;
     width: 95%;
-}
-
-main {
     padding: 5px;
     text-align: center;
     line-height: 1.5em;

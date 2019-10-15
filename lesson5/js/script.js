@@ -16,7 +16,11 @@ function getFullDate() {
     const dayName = dayNames[dt.getDay()];
     const fullYear = dt.getFullYear();
     const date_value = `${dayName}, ${date} ${monthName} ${fullYear}`;
-    return date_value;
+    return {
+        fullDate: date_value,
+        weekDayName: dayName
+    };
 }
 
-document.getElementById('todayDate').innerHTML = getFullDate();
+var dateInfo = getFullDate();
+document.getElementById('todayDate').innerHTML = dateInfo.fullDate; //dateInfo.weekDayName;
