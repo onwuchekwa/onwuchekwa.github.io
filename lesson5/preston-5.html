@@ -16,9 +16,11 @@
 </head>
 <body>          
     <!-- HEADER -->
-    <header>     
+    <header id="main-header">     
         <div id="friday-banner">
-            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            <p>
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            </p>
         </div>     
         <picture>
             <img src="images/ghanameteoagency.png" alt="Ghana Meteo Logo">
@@ -46,7 +48,15 @@
         <main>
             <h2>Preston <span>Idaho</span></h2>            
             <section class="content-box">
-                <h3>Hero image/weather summary</h3>
+                <div class="hero-container">
+                    <img class="hero-image" src="images/hero-image.jpg" alt="hero image">
+                    <div class="hero-weather-info">
+                        <h2>Weather Information</h2>
+                        <p>Gender: <span id="gender">Female</span</p>
+                        <p>Age: <span id="age">2.5</span></p>
+                        <p>Shots?: <span id="shots">Yes</span></p>
+                    </div>
+                </div>
             </section>
 
             <section class="content-box">
