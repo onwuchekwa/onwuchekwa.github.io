@@ -19,6 +19,66 @@
         font-size: .9rem;
     }
 
+    .hero-weather-info {
+        left: 30px;
+    }
+
+    #article-container, #contact {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table {
+        margin: 0 auto;
+        width: 60%;
+        border:none;
+        border-collapse: collapse;     
+    }
+
+    th {
+        background-color: #ffc857;
+        color: #2b0b0b;
+        padding: 15px;
+        border-left: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+    }
+
+    td {
+        background-color: #2b0b0b;
+        color: #ffc857; 
+        border-left: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        padding: 15px;
+    }
+
+    table td:first-child, table th:first-child{
+        border-left: none;
+    }
+    
+    table td:last-child, table th:last-child {
+        border-right: none;
+    }
+
+    .no-display {
+        display: block;
+    }
+
+    .mapouter {
+        position:relative;
+        text-align:right;
+        height:300px;
+        width:450px;
+	    padding: 0.6rem;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
+        border-radius: 10px;
+    }
+    
+    .gmap_canvas {
+        overflow:hidden;
+        background:none !important;
+        height:300px;
+        width:450px;
+    }
+
     footer {
         font-size: 0.8rem;
     }
