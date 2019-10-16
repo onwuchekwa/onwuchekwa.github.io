@@ -1,6 +1,3 @@
-//Function to get current year
-document.getElementById('current-year').innerHTML = new Date().getFullYear();
-
 //Toggle Menu
 function toggleMenu() { 
     document.getElementsByClassName("main-nav")[0].classList.toggle("responsive");  
@@ -18,16 +15,14 @@ function getFullDate() {
     const date_value = `${dayName}, ${date} ${monthName} ${fullYear}`;
     return {
         fullDate: date_value,
-        weekDayName: dayName
+        weekDayName: dayName,
+        currentYear: fullYear
     };
 }
 
 var dateInfo = getFullDate();
 
-//Footer Date
-document.getElementById('todayDate').innerHTML = dateInfo.fullDate;
-
-window.onresize = function () {
+function resize() {
     //Friday Banner
     var friday_banner = document.getElementById('friday-banner');
     var main_header = document.getElementById('main-header');
@@ -45,3 +40,13 @@ window.onresize = function () {
         }
     }
 }
+
+//Footer Date
+document.getElementById('todayDate').innerHTML = dateInfo.fullDate;
+
+//Function to get current year
+document.getElementById('current-year').innerHTML = dateInfo.currentYear;
+
+//Resize and show banner 
+window.onresize = resize();
+window.onload = resize();
