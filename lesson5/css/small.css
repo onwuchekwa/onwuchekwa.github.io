@@ -202,10 +202,10 @@ h3 {
     left: 10px;
 	background: radial-gradient(#1f2041, #2b0b0b);
 	border: 2px solid #ffc857;
-	padding: 0.7rem;
+	padding: 0.5rem;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
     opacity: 0.9;
-    width: 60%;
+    width: 65%;
     font-size: 0.7rem;
 }
 
@@ -220,7 +220,7 @@ hr {
 }
 
 .table-grid > span {
-    padding: 8px;
+    padding: 5px;
 }
 
 .head-content {
@@ -268,12 +268,12 @@ hr {
 .btn {
     color: #ffc857;
     background: #1f2041;
-    border-radius: 1.5em;
+    border-radius: 0.8em;
     margin: 5% auto;
-    padding: 8px;
+    padding: 6px;
     text-decoration: none;
-    width: 180px;
-    font-size: 1.3em;
+    width: 100px;
+    font-size: 0.9em;
 }
  
 .article-show, .article-hide {
@@ -306,7 +306,7 @@ hr {
 .panel p {
     position: relative;
     margin: 10% auto;
-    max-height: 235px;  
+    max-height: 200px;  
     overflow: hidden;
     transition: max-height .5s ease;
 }
@@ -327,14 +327,8 @@ hr {
     align-items: center;
 }
 
-.contact-img {
-    width: 40px;
-    height: auto;
-    padding-right: 10px;
-}
-
-.social-media {
-    width: 25px;
+.contact-img, .social-media  {
+    width: 23px;
     height: auto;
     padding-right: 5px;
 }

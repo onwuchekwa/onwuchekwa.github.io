@@ -37,6 +37,7 @@
 
     .hero-weather-info {
       left: 50px;
+      width: 30%;
     }
 
     #article-container, #contact {

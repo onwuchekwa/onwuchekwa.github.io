@@ -21,8 +21,14 @@
 
     .hero-weather-info {
         left: 30px;
-        width: 25%;
-        font-size: 1rem;
+        width: 40%;
+        font-size: 0.90rem;
+    }
+
+    .btn {
+        border-radius: 1.5em;
+        width: 150px;
+        font-size: 1.2em;
     }
 
     table {
@@ -59,6 +65,12 @@
 
     .no-display {
         display: block;
+    }
+
+    .contact-img, .social-media  {
+        width: 25px;
+        height: auto;
+        padding-right: 5px;
     }
 
     iframe {
