@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|exit-button+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
 
 body {
 	background-color: #ffffff;
@@ -141,7 +141,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: #1f2041;
-    font-family: 'exit-button Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2 span {
