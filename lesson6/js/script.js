@@ -59,17 +59,3 @@ window.addEventListener('resize', changeSize);
 
 //Resize and show banner 
 changeSize();
-
-//WebFont Js
-WebFont.load({
-    google: {
-      families: [
-         'Ubuntu',
-         'Montserrat',
-         'Roboto',
-         'Share Tech Mono',
-         'Open Sans'
-      ]
-    }
-  });
-

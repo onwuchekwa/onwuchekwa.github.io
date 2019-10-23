@@ -49,7 +49,11 @@
             <h2>Preston <span>Idaho</span></h2>            
             <section class="content-box">
                 <div class="hero-container">
-                    <img class="hero-image" src="images/hero-image.jpg" alt="clear blue sky">
+                    <picture>
+                        <source media="(min-width: 60em)" srcset="images/hero-image-1200.png">
+                        <source media="(min-width: 37.5em)" srcset="images/hero-image-800.png">
+                        <img class="hero-image" src="images/hero-image-400.png" alt="clear blue sky">
+                    </picture>
                     <div class="hero-weather-info">
                         <h3>Weather Summary</h3>
                         <hr>
@@ -58,16 +62,16 @@
                             <span class="head-value">Sunny</span>
 
                             <span class="head-content">High:</span> 
-                            <span class="head-value">76 &#8457;</span>
+                            <span class="head-value"><span id="temp">48</span>&#8457;</span>
 
                             <span class="head-content">Wind Chill:</span>
-                            <span class="head-value">&#8457;</span>
+                            <span class="head-value"><span id="wind-chill"></span></span>
 
                             <span class="head-content">Humidity:</span>
                             <span class="head-value">69%</span>
 
                             <span class="head-content">Wind Speed:</span>
-                            <span class="head-value">5 mph</span>
+                            <span class="head-value"><span id="wind-speed">5</span>mph</span>
                         </div>
                     </div>
                 </div>
@@ -173,5 +177,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
