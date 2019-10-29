@@ -48,13 +48,28 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    footer {
+  footer {
       font-size: 0.9em;
       width: 90%;
       margin: 0 auto;
-    }
-    
-    #gallery-container {
-      grid-template-columns: 1fr 1fr;
-    }
+  }    
+
+  /*
+    Gallery Styles
+
+  */
+
+  .gallery-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .caption {
+    display: block;
+    font-size: small;
+    color: #1f2041;
+  }
+
+  .gallery-container img:hover {
+    box-shadow: 0 10px 20px 0 #a50404;
+  }
 }

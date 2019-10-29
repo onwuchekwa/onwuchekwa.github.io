@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ghana Meteorological Agency portal for Sunday Ogbonnaya Onwuchekwa in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="author" content="Sunday O. Onwuchekwa">
+    <title>Ghana Meteorological Agency | Home</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>          
+    <!-- HEADER -->
+    <header id="main-header">     
+        <div id="friday-banner">
+            <p>
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+            </p>
+        </div>     
+        <picture>
+            <img src="images/ghanameteoagency.png" alt="Ghana Meteo Logo">
+        </picture>
+        <section class="sec-company-info">
+            <h1>Ghana Meteorological Agency</h1>
+            <div class="motto">Your source for weather information</div>
+        </section>
+    </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#" onclick="toggleMenu()"><span class="exit-button">&#215;</span><span class="hamburger">&#9776; Menu</span></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html" >Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div id="content-container">
+       <!-- MAIN -->
+        <main>
+            <h2>Gal<span>lery</span></h2>            
+            <div class="gallery-container">
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/blue-sky.jpg" alt="blue sky">
+                    <div class="caption">Blue Sky</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/clear-sky.jpg" alt="clear sky">
+                    <div class="caption">Clear Sky</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/cyclone.jpg" alt="cyclone">
+                    <div class="caption">Cyclone</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/dark-cloud.jpg" alt="dark cloud">
+                    <div class="caption">Dark Cloud</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/rain.jpg" alt="storm rain">
+                    <div class="caption">Storm Rain</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/lightening.jpg" alt="lightning">
+                    <div class="caption">Thunder and Lightning</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/snowy.jpg" alt="snow">
+                    <div class="caption">Snow</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/storm.jpg" alt="storm">
+                    <div class="caption">Storm</div>
+                </picture>
+
+                <picture>
+                    <img src="images/gallery-placeholder.png" data-src="images/fog.jpg" alt="fog">
+                    <div class="caption">Fog</div>
+                </picture>
+            </div>
+        </main>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> Ghana Meteorological Agency | <a href="#" target="_blank">Terms of Use</a> | Sunday O. Onwuchekwa<br>
+            <span id="todayDate"></span><br>
+            <a href="../index.html">Return to CIT 230: Assignment Portal</a>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/webfont.js"></script>
+</body>
+</html>
