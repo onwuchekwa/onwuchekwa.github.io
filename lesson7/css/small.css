@@ -364,21 +364,28 @@ footer a {
     align-items: center;
 }
 
+.gallery-container picture, .gallery-container img {    
+    border-radius: 10px;
+}
+
 .gallery-container img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
     filter: blur(0em);
     transition: filter 0.5s;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
 }
 
 .gallery-container img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0);
+    /*filter: blur(0.2em);*/
 }
 
 .caption {
-    display: none;
+    visibility: hidden;
+    font-size: small;
+    padding: 10px 0 10px 0;
+    color: #1f2041;
 }
 
 .gallery-container picture:hover {

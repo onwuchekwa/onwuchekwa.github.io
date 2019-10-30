@@ -61,33 +61,43 @@ window.addEventListener('resize', changeSize);
 changeSize();
 
 //Lazy load image using the Intersection Observer API
-const imagesToLoad = document.querySelectorAll('img[data-src]');
-const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 50px 0px"
+const images = document.querySelectorAll('img[data-src]');
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
 };
 
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-        image.removeAttribute('data-src');
-    };
-};
+const fetchImage = (url) => {
+  console.log(url)
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.src = url;
+    image.onload = resolve;
+    image.onerror = reject;
+  });
+}
 
-if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
-    });
-    imagesToLoad.forEach((img) => {
-      observer.observe(img);
-    });
-  } else {
-    imagesToLoad.forEach((img) => {
-      loadImages(img);
-    });
-  }
+const loadImage = (image) => {
+  const src = image.dataset.src;
+  fetchImage(src).then(() => {
+    image.src = src;
+  })
+}
+
+const handleIntersection = (entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.intersectionRatio > 0) {
+      //console.log(entry.intersectionRatio);
+      loadImage(entry.target)
+    }
+  })
+}
+
+// The observer for the images on the page
+const observer = new IntersectionObserver(handleIntersection, options);
+
+images.forEach(img => {
+  observer.observe(img);
+})
