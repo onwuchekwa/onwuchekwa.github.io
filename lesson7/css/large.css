@@ -71,11 +71,11 @@
     visibility: visible;  
   }
 
-  .gallery-container picture {    
+  .gallery-container .picture {    
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
   }
 
-  .gallery-container picture:hover {
+  .gallery-container .picture:hover {
     box-shadow: 0 10px 20px 0 #a50404;
   }
 }
