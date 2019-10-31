@@ -36,7 +36,7 @@
         width: 60%;
         border:none;
         border-collapse: collapse;    
-        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2); 
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1); 
         margin-bottom: 1.5rem;
     }
 
@@ -85,7 +85,7 @@
         text-align:right;
         height:300px;
         width:100%;
-        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
     }
     
     .gmap_canvas {

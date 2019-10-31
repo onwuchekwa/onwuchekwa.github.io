@@ -203,7 +203,7 @@ h3 {
 	background: radial-gradient(#1f2041, #2b0b0b);
 	border: 2px solid #ffc857;
 	padding: 0.5rem;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
     opacity: 0.9;
     width: 55%;
     font-size: 0.7rem;
@@ -247,13 +247,13 @@ hr {
     background-color: #ffc857;
     color: #1f2041;
     border-radius: 10px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2); 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1); 
 }
 
 .img1 {
     width: 100%;
     height: auto;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 2);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
     border-radius: 10px; 
 }
 
@@ -373,7 +373,7 @@ footer a {
     height: auto;
     filter: blur(0em);
     transition: filter 0.5s;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
 .gallery-container img[data-src] {
