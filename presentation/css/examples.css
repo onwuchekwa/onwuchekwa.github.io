@@ -1,0 +1,153 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8em;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header nav, footer p {
+    background-color: #1f2041;   
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 0.75em;
+    margin: 0.75rem;
+    text-align: center;
+}
+
+section {
+    padding: 0.75em;
+    margin: 0.75rem;
+}
+
+.example-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header img {    
+    box-shadow: 0 0 10px #1f2041;
+    border-radius: 10px;
+}
+
+h1 { 
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+footer {    
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+#lastUpdated {
+    color: #ffc857;
+}
+
+form {    
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px; 
+    width: 85%;
+    margin-right: 10px;;
+}
+
+#attribute-examples {
+    background-color: #ffc857;
+}
+
+form h3 {
+    text-align: center;
+    color: #581042;
+    font-size: 1.05rem;
+}
+
+p * {
+    display: block;
+}  
+
+label {
+    color: #340e41;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px; 
+    color: #1f2041;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+input {    
+    height: 30px;
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    background-color: #581042;
+    border-radius: 10px;
+    color: #ffc857;
+    border: none;
+}
+
+input:invalid {
+    border: 2px solid #900;
+}
+
+input:focus:invalid {
+    outline: none;;
+}
+
+input:valid {
+    border: 2px solid #00ff00;
+}
+
+.error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-style: italic;
+  }
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+     font-size: 2.5em;
+    }
+ 
+    h2 {
+     font-size: 1.5em;
+    }
+ 
+    header img {
+     float: right;
+    }
+
+    .example-contents {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
