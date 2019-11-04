@@ -63,19 +63,19 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .gallery-container img {
+  figure img {
     box-shadow: none;
 }
 
-  .caption {    
-    visibility: visible;  
+  figcaption {    
+    display: block;  
   }
 
-  .gallery-container .picture {    
+  figure {    
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
   }
 
-  .gallery-container .picture:hover {
+  figure:hover {
     box-shadow: 0 10px 20px 0 #a50404;
   }
 }

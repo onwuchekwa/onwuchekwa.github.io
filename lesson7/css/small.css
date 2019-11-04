@@ -364,11 +364,15 @@ footer a {
     align-items: center;
 }
 
-.gallery-container .picture, .gallery-container img {    
+figure {
+    margin: 0;
+}
+
+figure, figure img {    
     border-radius: 10px;
 }
 
-.gallery-container img {
+figure img {
     width: 100%;
     height: auto;
     filter: blur(0em);
@@ -376,18 +380,18 @@ footer a {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
 }
 
-.gallery-container img[data-src] {
+figure img[data-src] {
     filter: blur(0);
     /*filter: blur(0.2em);*/
 }
 
-.caption {
-    visibility: hidden;
+figcaption {
+    display: none;
     font-size: small;
     padding: 10px 0 10px 0;
     color: #1f2041;
 }
 
-.gallery-container .picture:hover {
+figure:hover {
     box-shadow: none;
 }
