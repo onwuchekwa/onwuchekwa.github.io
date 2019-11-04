@@ -80,10 +80,6 @@ form h3 {
     font-size: 1.05rem;
 }
 
-p * {
-    display: block;
-}  
-
 label {
     color: #340e41;
 }
@@ -111,6 +107,7 @@ button {
     border-radius: 10px;
     color: #ffc857;
     border: none;
+    font-size: 13px;
 }
 
 input:invalid {
@@ -126,11 +123,11 @@ input:valid {
 }
 
 .error {
-    border-color: red;
+    border-color: #900;
   }
   
   .error-message {
-    color: red;
+    color: #900;
     font-style: italic;
   }
 

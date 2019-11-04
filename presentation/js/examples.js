@@ -1,3 +1,102 @@
+/*********************************************************************************************************
+    JavaScript Validation
+**********************************************************************************************************/
+//Function to display Error Message
+function displayError(elementID, errorMessage){
+    document.getElementById(elementID).textContent = errorMessage;
+}
+
+//Function to validate form
+function validation() {
+    //Get data from form elements
+    var name = document.JavascriptValidation.txtName1;
+    var email1 = document.JavascriptValidation.txtEmail1;
+    var numAge = document.JavascriptValidation.txtNum;
+    var validDate = document.JavascriptValidation.txtDate1;
+
+    //Assign default value to error variables
+    var erName = erEmail = erNum = erDate = true;
+
+    //validate name
+    if(name.value == ""){
+        displayError("erName", "This is a required field.");
+        name.style.border  = "2px solid #900";
+    } else {
+        var name_regex = /^[a-zA-Z\s]+$/;
+        if (name_regex.test(name.value) === false){
+            displayError("erName", "Enter a valid name.");
+            name.style.border  = "2px solid #900";
+        } else {
+            displayError("erName", "");
+            name.style.border  = "2px solid #00ff00";
+            erName = false;
+        }
+    }
+
+    //Validate Email
+    if(email1.value == ""){
+        displayError("erEmail", "This is a required field.");
+        email1.style.border  = "2px solid #900";
+    } else {
+        //Regex for a basic email
+        var email_regex = /^\S+@\S+\.\S+$/;
+        if (email_regex.test(email1.value) === false){
+            displayError("erEmail", "Enter a valid Email Address.");
+            email1.style.border  = "2px solid #900";
+        } else {
+            displayError("erEmail", "");
+            email1.style.border  = "2px solid #00ff00";
+            erEmail = false;
+        }
+    }
+
+    //Validate Age
+    if(numAge.value == ""){
+        displayError("erNum", "This is a required field.");
+        numAge.style.border  = "2px solid #900";
+    } else {
+        //Regex for a basic email
+        var age_regex = /^\d+$/;
+        if (age_regex.test(numAge.value) === false){
+            displayError("erNum", "Enter a valid Age.");
+            numAge.style.border  = "2px solid #900";
+        } else {
+            displayError("erNum", "");
+            numAge.style.border  = "2px solid #00ff00";
+            erNum = false;
+        }
+    }
+
+    //Validate Date (MM/dd/yyyy)
+    if(validDate.value == ""){
+        displayError("erDate", "This is a required field.");
+        validDate.style.border  = "2px solid #900";
+    } else {
+        //Regex for a basic email
+        var date_regex = /^((0?[1-9]|1[012])[-/.](0?[1-9]|[12][0-9]|3[01])[-/.](19|20)?[0-9]{2})*$/;
+        if (date_regex.test(validDate.value) === false){
+            displayError("erDate", "Enter a valid Date.");
+            validDate.style.border  = "2px solid #900";
+        } else {
+            displayError("erDate", "");
+            validDate.style.border  = "2px solid #00ff00";
+            erDate = false;
+        }
+    }
+
+    //Prevent form submission if there is any error
+    if((erName || erEmail || erNum || erDate) == true){
+        return false;
+    } else {
+        //Create a string from input data for preview
+        var dataPreview = "You have entered the following information: \n" + "Name: " + name.value + "\n" + "Email Address: " + email1.value + "\n" + "Age: " + numAge.value + "\n" + "Date: " + validDate.value;
+        alert(dataPreview);
+    }
+}
+
+/*********************************************************************************************************
+    JavaScript Constraint API
+**********************************************************************************************************/
 var forms = document.querySelectorAll('.validate');
 for (var i = 0; i < forms.length; i++) {
     forms[i].setAttribute('novalidate', true);
