@@ -84,7 +84,7 @@ label {
     color: #340e41;
 }
 
-input, textarea {
+input {
     width: 100%;
     border-radius: 5px; 
     color: #1f2041;
@@ -110,15 +110,11 @@ button {
     font-size: 13px;
 }
 
-input:invalid {
+input:focus:required:invalid {
     border: 2px solid #900;
 }
 
-input:focus:invalid {
-    outline: none;;
-}
-
-input:valid {
+input:required:valid {
     border: 2px solid #00ff00;
 }
 
