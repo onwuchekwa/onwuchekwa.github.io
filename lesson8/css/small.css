@@ -443,7 +443,7 @@ form label.top input, form label.top select, form label.top textarea {
 
 form label.sbs {
     display: block;
-    padding: .50rem 0;
+    padding: .5rem 0;
     color: #1f2041;
     text-align: left;
 }

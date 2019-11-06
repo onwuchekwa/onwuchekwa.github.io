@@ -78,4 +78,8 @@
   figure:hover {
     box-shadow: 0 10px 20px 0 #a50404;
   }
+
+  form label.sps {
+    padding: .4rem 0;
+  }
 }
