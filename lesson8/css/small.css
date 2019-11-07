@@ -402,23 +402,25 @@ figure:hover {
 */
 
 .form-container {
-    width: 300px;
+    width: 450px;
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #1f2041;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: .5rem 2%;    
+    box-sizing: border-box;
 }
 
 form legend {
     color: #1f2041;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 .5rem;  
 }
 
 form label.top, form div {
@@ -436,9 +438,9 @@ form label.top input, form label.top select, form label.top textarea {
     border-radius: 5px;
     padding: .75rem;
     color: #1f2041;
-    width: 90%;
-    /*max-width: 20rem;*/
-    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);    
+    box-sizing: border-box;
 }
 
 form label.sbs {
@@ -457,6 +459,7 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    box-sizing: border-box;
 }
 
 form label.top input:required {
