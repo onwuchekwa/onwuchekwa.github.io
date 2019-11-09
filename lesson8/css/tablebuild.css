@@ -11,34 +11,34 @@ main {
     align-items: center;
 }
 
-table, caption, th, td {
+table, th, td {
     border: 1px solid #bbbbbb;
     border-collapse: collapse;
     padding: 8px;
 }
 
-caption {
+thead tr th {
     font-size: 1.5rem;
     font-weight: bolder;
 }
 
-table, caption {
+table {
     box-sizing: border-box;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(127,185,194,0.5);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(127,185,194,0.5);
-    box-shadow: 10px 10px 5px 0px rgba(127,185,194,0.5); 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(127, 185, 194, 0.7);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(127, 185, 194, 0.7);
+    box-shadow: 10px 10px 5px 0px rgba(127, 185, 194, 0.7); 
     margin: auto;
 }
 
-caption, tfoot {
+thead tr th, tfoot {
     background-color: #7fb9c2;
 }
 
-th {
+tbody th {
     font-size: 1.2rem;
 }
 
-thead th, .selected {
+tbody th, .selected {
     background-color: #628ca6;
     color: #ffffff;
 }

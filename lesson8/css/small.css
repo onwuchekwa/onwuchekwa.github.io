@@ -139,6 +139,8 @@ main {
     padding: 5px;
     text-align: center;
     line-height: 1.5em;
+    display: block;
+    box-sizing: border-box;
 }
 
 #content-container {
@@ -176,6 +178,7 @@ h3 {
     color: #ffffff;
     border-radius: 5px;    
     box-shadow: 0 10px 20px 0 rgba(43,11,11, 0.6);
+    box-sizing: border-box;
 }
 
 .hero-image {
@@ -248,6 +251,7 @@ hr {
     color: #1f2041;
     border-radius: 10px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1); 
+    box-sizing: border-box;
 }
 
 .img1 {
@@ -323,8 +327,9 @@ hr {
 }
 
 .contact-detail {
-    display: flex;
+    display: block;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .contact-img, .social-media  {
