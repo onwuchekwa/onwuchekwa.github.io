@@ -100,11 +100,22 @@
     }
 
     /*
-    Gallery Styles
-
+        Gallery Styles
     */
 
     .gallery-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    /*
+        Index Styles
+    */
+
+    .towns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .text-container p {
+      font-size: 1.1rem;
+  }
 }

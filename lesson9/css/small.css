@@ -336,6 +336,7 @@ hr {
     width: 23px;
     height: auto;
     padding-right: 5px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -358,7 +359,6 @@ footer a {
 
 /*
     Gallery Styles
-
 */
 
 .gallery-container {
@@ -403,7 +403,6 @@ figure:hover {
 
 /*
     Storm Center Forms
-
 */
 
 .form-container {
@@ -475,4 +474,57 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: 6px solid #004c00;
+}
+
+/*
+    Index Styles
+*/
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1f2041;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.town-card {
+    background-color: #ffc857;
+    color: #1f2041;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+.text-container {
+    padding: 5px;
+}
+
+.text-container h3 {
+    font-size: 2rem;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.text-container h4 {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.text-container p {
+    font-size: 1rem;
+}
+
+.image-container {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }

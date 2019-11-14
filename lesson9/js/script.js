@@ -106,3 +106,59 @@ images.forEach(img => {
 function adjustSeverity(severity_value) {
   document.getElementById("stormseverityvalue").innerHTML = severity_value;
 }
+
+//Town Information JSON
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//const requestURL = 'weather-town.json';
+
+fetch(requestURL)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(townJsonObject) {
+    console.table(townJsonObject);
+
+    const towns = townJsonObject['towns'];
+    for(let i = 0; i <= towns.length; i++) {
+      if (i == 1 || i == 4 || i == 5) {
+        let article = document.createElement('article');
+        article.setAttribute('class', 'town-card');
+
+        let textContainer = document.createElement('div');
+        textContainer.setAttribute('class', 'text-container');
+
+        let imageContainer = document.createElement('picture');
+        imageContainer.setAttribute('class', 'image-container');
+
+        let townName = document.createElement('h3');
+        townName.textContent = towns[i].name;
+
+        let townMotto = document.createElement('h4');
+        townMotto.textContent = towns[i].motto;
+
+        let yearFounded = document.createElement('p');
+        yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+
+        let currentPopulation = document.createElement('p');
+        currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
+
+        let averageRainfall = document.createElement('p');
+        averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+        let img = document.createElement('img');
+        img.setAttribute('src', towns[i].photo);
+        img.setAttribute('alt', towns[i].name + '- ' + i)
+
+        textContainer.appendChild(townName);
+        textContainer.appendChild(townMotto);
+        textContainer.appendChild(yearFounded);
+        textContainer.appendChild(currentPopulation);
+        textContainer.appendChild(averageRainfall);
+        imageContainer.appendChild(img);
+        article.appendChild(textContainer);
+        article.appendChild(imageContainer);
+        document.querySelector('div.towns').appendChild(article);
+      }
+    }
+  });

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Ghana Meteorological Agency portal for Sunday Ogbonnaya Onwuchekwa in CIT 230: Web Frontend Development at Brigham Young University - Idaho">
     <meta name="author" content="Sunday O. Onwuchekwa">
-    <title>Ghana Meteorological Agency | Storm Center</title>
+    <title>Ghana Meteorological Agency | Home</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
@@ -34,11 +34,11 @@
     <nav>
         <ul class="main-nav">
             <li><a href="#" onclick="toggleMenu()"><span class="exit-button">&#215;</span><span class="hamburger">&#9776; Menu</span></a></li>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="preston-9.html" >Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery-9.html">Gallery</a></li>
         </ul>
     </nav>
@@ -46,95 +46,30 @@
     <div id="content-container">
        <!-- MAIN -->
         <main>
-            <section class="form-container">
-                <h2>Storm <span>Center</span></h2>   
-                <form method="GET" action="thanks.html">
-                    <h3>My Storm Report</h3>
-                    <fieldset>
-                        <legend>Storm Reporter</legend>
-                        <label class="top">
-                            Full Name *
-                            <input type="text" name="fullname" pattern="[A-Za-z ]+" minlength="5" required>
-                        </label>
+            <h2>Preston <span>Idaho</span></h2>            
+            <section class="content-box">
+                <div class="hero-container">
+                    <picture>
+                        <source media="(min-width: 60em)" srcset="images/index-cover1200.jpg">
+                        <source media="(min-width: 37.5em)" srcset="images/index-cover800.jpg">
+                        <img class="hero-image" src="images/index-cover400.jpg" alt="clear blue sky">
+                    </picture>
+                </div>
+            </section>
 
-                        <label class="top">
-                            Email
-                            <input type="email" name="email" placeholder="someone@ghweather.com">
-                        </label>
+            <section class="content-box no-display">
+                <h3>5 Day Forecast</h3>
+                <p class="general-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat, deleniti aut dignissimos totam expedita modi corrupti ea cum aperiam tempora itaque veritatis eaque voluptatibus perspiciatis explicabo enim porro saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum, consequatur itaque saepe repellendus magni nesciunt vitae ullam, consequuntur nostrum tempore temporibus minima? Molestias reprehenderit culpa, repudiandae molestiae ex delectus?
+                </p>
+            </section>
 
-                        <label class="top">
-                            Phone Number *
-                            <input type="tel" name="phone" placeholder="12348649871" required>
-                        </label>
-
-                        <label class="top">
-                            ZIp Code *
-                            <input type="number" name="zip" required>
-                        </label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Storm Details</legend>
-                        <label class="top">
-                            Storm Date
-                            <input type="date" name="stormdate">
-                        </label>
-
-                        <label class="top">
-                            Storm Type
-                            <input name="stormtype" list="stormlist">
-                            <datalist id="stormlist">
-                                <option value="Flash Flood"></option>
-                                <option value="Hail"></option>
-                                <option value="Hurricane"></option>
-                                <option value="Thunderstorm"></option>
-                                <option value="Tornado"></option>
-                            </datalist>
-                        </label>
-
-                        <label class="top">
-                            Storm Severity (1 to 10)
-                            <input type="range" id="stormseverity" name="stormseverity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
-                            <span id="stormseverityvalue">5</span>
-                        </label>
-
-                        <label class="top">
-                            Storm Region
-                            <select name="stromregion">
-                                <option value="" selected disabled>Select Region &#9662;</option>
-                                <option value="fish_haven">Fish Haven</option>
-                                <option value="preston">Preston</option>
-                                <option value="sugar_city">Sugar City</option>
-                            </select>
-                        </label>                    
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Reporter Safety Information</legend>
-                        <div>Are You in Danger?</div>
-                        <label class="sbs">
-                            <input type="radio" name="dangerinfo" value="maybe"> Maybe
-                        </label>
-
-                        <label class="sbs">
-                            <input type="radio" name="dangerinfo" value="no"> No
-                        </label>
-
-                        <label class="sbs">
-                            <input type="radio" name="dangerinfo" value="yes"> Yes
-                        </label>
-
-                        <label class="top">
-                            Additional Information or Comments
-                            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-                        </label>
-                    </fieldset>
-                    <input type="submit" value="Send My Storm Report" class="submitBtn">
-                </form>
+            <section class="town-container">
+                <div class="towns"></div>
             </section>
 
             <section class="content-box">
-                <h3>Contact Information</h3>                
+                <h3>Contact Information</h3>              
                 <div id="contact">
                     <div class="map no-display">
                         <div class="mapouter">

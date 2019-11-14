@@ -82,4 +82,16 @@
   form label.sps {
     padding: .4rem 0;
   }
+
+  /*
+      Index Styles
+  */
+
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text-container p {
+      font-size: 1.2rem;
+  }
 }
