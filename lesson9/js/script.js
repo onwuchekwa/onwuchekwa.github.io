@@ -147,7 +147,7 @@ fetch(requestURL)
         averageRainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
 
         let img = document.createElement('img');
-        img.setAttribute('src', towns[i].photo);
+        img.setAttribute('src', 'images/' + towns[i].photo);
         img.setAttribute('alt', towns[i].name + '- ' + i)
 
         textContainer.appendChild(townName);

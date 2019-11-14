@@ -512,6 +512,7 @@ form label.top input:required:valid {
 .text-container h4 {
     font-size: 0.9rem;
     font-style: italic;
+    margin-top : -0.8em;
 }
 
 .text-container p {
