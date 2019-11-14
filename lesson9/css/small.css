@@ -480,6 +480,15 @@ form label.top input:required:valid {
     Index Styles
 */
 
+.general-info {
+    text-align: left;
+}
+
+.general-info a {
+    text-decoration: none;
+    color: #ffc857;
+}
+
 .towns {
     display: grid;
     grid-template-columns: 1fr;
