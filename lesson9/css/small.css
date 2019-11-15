@@ -488,7 +488,7 @@ form label.top input:required:valid {
     text-decoration: none;
     color: #ffc857;
 }
-/*town-section*/
+
 .town-container {
     background-color: #1f2041;
     color: #ffffff;
@@ -498,7 +498,7 @@ form label.top input:required:valid {
     box-sizing: border-box;
 }
 
-/*town-card*/
+
 .towns { 
     margin : 25px auto;
     display: grid;
@@ -511,7 +511,6 @@ form label.top input:required:valid {
     
 }
 
-/*town-wrapper*/
 .town-card {   
     padding : 0;
     overflow : hidden;
@@ -522,11 +521,7 @@ form label.top input:required:valid {
     border-radius: 5px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1); 
 }
-/*
-.text-container {
-    padding: 5px;
-}
-*/
+
 .text-container h3 {
     font-size: 2rem;
     text-shadow: 2px 2px #ffffff;
@@ -542,9 +537,23 @@ form label.top input:required:valid {
     font-size: 1rem;
 }
 
-
 .town-card div, .town-card img {
     display : block; 
     width: 100%;
     height: auto;
+}
+
+.town-card:nth-child(1) {
+    order: 3;
+    -webkit-order: 3;
+}
+
+.town-card:nth-child(2) {
+    order: 1;
+    -webkit-order: 1;
+}
+
+.town-card:nth-child(3) {
+    order: 2;
+    -webkit-order: 2;
 }
