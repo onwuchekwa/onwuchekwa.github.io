@@ -528,13 +528,8 @@ form label.top input:required:valid {
     font-size: 1rem;
 }
 
-.image-container {
-    margin: 0;
-    padding: 0;
-}
 
-.image-container img {
+img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
 }

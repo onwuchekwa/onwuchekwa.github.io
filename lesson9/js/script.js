@@ -125,11 +125,11 @@ fetch(requestURL)
         let article = document.createElement('article');
         article.setAttribute('class', 'town-card');
 
-        let textContainer = document.createElement('div');
-        textContainer.setAttribute('class', 'text-container');
+        let textContainer1 = document.createElement('div');
+        textContainer1.setAttribute('class', 'text-container');
 
-        let imageContainer = document.createElement('picture');
-        imageContainer.setAttribute('class', 'image-container');
+        let textContainer2 = document.createElement('div');
+        textContainer2.setAttribute('class', 'text-container');
 
         let townName = document.createElement('h3');
         townName.textContent = towns[i].name;
@@ -150,14 +150,14 @@ fetch(requestURL)
         img.setAttribute('src', 'images/' + towns[i].photo);
         img.setAttribute('alt', towns[i].name + '- ' + i)
 
-        textContainer.appendChild(townName);
-        textContainer.appendChild(townMotto);
-        textContainer.appendChild(yearFounded);
-        textContainer.appendChild(currentPopulation);
-        textContainer.appendChild(averageRainfall);
-        imageContainer.appendChild(img);
-        article.appendChild(textContainer);
-        article.appendChild(imageContainer);
+        textContainer1.appendChild(townName);
+        textContainer1.appendChild(townMotto);
+        article.appendChild(textContainer1);
+        article.appendChild(img);
+        textContainer2.appendChild(yearFounded);
+        textContainer2.appendChild(currentPopulation);
+        textContainer2.appendChild(averageRainfall);
+        article.appendChild(textContainer2);
         document.querySelector('div.towns').appendChild(article);
       }
     }
