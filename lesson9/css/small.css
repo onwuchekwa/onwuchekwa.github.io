@@ -488,35 +488,45 @@ form label.top input:required:valid {
     text-decoration: none;
     color: #ffc857;
 }
-
+/*town-section*/
 .town-container {
     background-color: #1f2041;
     color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
     padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
 }
-.towns {
+
+/*town-card*/
+.towns { 
+    margin : 25px auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
     align-content: center;
     justify-content: center;
+    box-sizing: border-box;
     
 }
 
-.town-card {
+/*town-wrapper*/
+.town-card {   
+    padding : 0;
+    overflow : hidden;
+    display : flex;
+    flex-flow : column nowrap;
     background-color: #ffc857;
     color: #1f2041;
     border-radius: 5px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1); 
 }
-
+/*
 .text-container {
     padding: 5px;
 }
-
+*/
 .text-container h3 {
     font-size: 2rem;
     text-shadow: 2px 2px #ffffff;
@@ -533,7 +543,8 @@ form label.top input:required:valid {
 }
 
 
-img {
+.town-card div, .town-card img {
+    display : block; 
     width: 100%;
     height: auto;
 }

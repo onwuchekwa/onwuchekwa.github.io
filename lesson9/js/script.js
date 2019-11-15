@@ -120,16 +120,14 @@ fetch(requestURL)
     console.table(townJsonObject);
 
     const towns = townJsonObject['towns'];
+    const townsCovered = ["Fish Haven", "Soda Springs", "Preston"];
     for(let i = 0; i <= towns.length; i++) {
-      if (i == 1 || i == 4 || i == 5) {
+      if (townsCovered.includes(towns[i].name)) {
         let article = document.createElement('article');
         article.setAttribute('class', 'town-card');
 
-        let textContainer1 = document.createElement('div');
-        textContainer1.setAttribute('class', 'text-container');
-
-        let textContainer2 = document.createElement('div');
-        textContainer2.setAttribute('class', 'text-container');
+        let textContainer = document.createElement('div');
+        textContainer.setAttribute('class', 'text-container');
 
         let townName = document.createElement('h3');
         townName.textContent = towns[i].name;
@@ -148,16 +146,15 @@ fetch(requestURL)
 
         let img = document.createElement('img');
         img.setAttribute('src', 'images/' + towns[i].photo);
-        img.setAttribute('alt', towns[i].name + '- ' + i)
+        img.setAttribute('alt', towns[i].name + ' - ' + i)
 
-        textContainer1.appendChild(townName);
-        textContainer1.appendChild(townMotto);
-        article.appendChild(textContainer1);
+        textContainer.appendChild(townName);
+        textContainer.appendChild(townMotto);
+        textContainer.appendChild(yearFounded);
+        textContainer.appendChild(currentPopulation);
+        textContainer.appendChild(averageRainfall);
+        article.appendChild(textContainer);
         article.appendChild(img);
-        textContainer2.appendChild(yearFounded);
-        textContainer2.appendChild(currentPopulation);
-        textContainer2.appendChild(averageRainfall);
-        article.appendChild(textContainer2);
         document.querySelector('div.towns').appendChild(article);
       }
     }
