@@ -489,17 +489,21 @@ form label.top input:required:valid {
     color: #ffc857;
 }
 
+.town-container {
+    background-color: #1f2041;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
+    padding: 10px 20px 20px 20px;
+}
 .towns {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
     text-align: center;
     align-content: center;
     justify-content: center;
-    padding: 20px;
-    background-color: #1f2041;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
+    
 }
 
 .town-card {
