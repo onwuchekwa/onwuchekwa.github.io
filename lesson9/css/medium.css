@@ -115,11 +115,11 @@
         grid-template-columns : 1fr; 
     }
 
-    .town-card {
+    .town-card,  .town-card:nth-child(1), .town-card:nth-child(2) {
         flex-flow : row nowrap;
     }
 
-    .town-card:nth-child(even) {
+    .town-card:nth-child(3) {
         flex-flow : row-reverse nowrap;
     }
 
