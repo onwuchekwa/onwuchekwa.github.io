@@ -41,7 +41,6 @@ fetch(apiResponseURL)
             tableHeader.textContent = nextWeekDay;  
             weekDaysHeader.appendChild(tableHeader);  
             document.querySelector('thead.table-header').appendChild(tableHeader);
-            //document.querySelector('tr.weekDaysHeader').appendChild(tableHeader);
 
             // Generate weather icons
             const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject[i].weather[0].icon + '.png'; 
@@ -53,14 +52,12 @@ fetch(apiResponseURL)
             imageTableData.appendChild(weatherImage);
             weatherIcon.appendChild(imageTableData);  
             document.querySelector('thead.table-header').appendChild(weatherIcon);
-            //document.querySelector('tr.weatherIcon').appendChild(imageTableData);
 
             // Generate weather temperature
             const temperature = document.createElement("td");
             temperature.innerHTML = jsonObject[i].main.temp + "&#8457;";
             weatherTemp.appendChild(temperature);  
             document.querySelector('thead.table-header').appendChild(weatherTemp);
-            //document.querySelector('tr.weatherTemp').appendChild(temperature);  
         }
     }
 });
