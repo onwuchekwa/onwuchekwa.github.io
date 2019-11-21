@@ -56,11 +56,11 @@
         padding: 15px;
     }
 
-    table td:first-child, table thead th:first-child{
+    table td:first-child, table th:first-child{
         border-left: none;
     }
     
-    table td:last-child, table thead th:last-child {
+    table td:last-child, table th:last-child {
         border-right: none;
     }
 

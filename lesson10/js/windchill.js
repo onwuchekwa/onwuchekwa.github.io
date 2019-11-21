@@ -34,13 +34,13 @@ fetch(apiResponseURL)
         const dt_txt_field = jsonObject[i].dt_txt;
         if (dt_txt_field.includes("18:00:00")){  
             // Generate table headers
-            const nextDay = new Date();
-            nextDay.setDate(nextDay.getDate() + i);
+            const nextDay = new Date(dt_txt_field);
+            nextDay.setDate(nextDay.getDate());
             const nextWeekDay = weekDays(nextDay);
             const tableHeader = document.createElement("th");
             tableHeader.textContent = nextWeekDay;  
             weekDaysHeader.appendChild(tableHeader);  
-            document.querySelector('thead.table-header').appendChild(tableHeader);
+            document.querySelector('thead.table-header').appendChild(weekDaysHeader);
 
             // Generate weather icons
             const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject[i].weather[0].icon + '.png'; 
