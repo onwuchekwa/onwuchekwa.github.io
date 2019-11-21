@@ -24,18 +24,24 @@ fetch(apiResponseURL)
         const days = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat');
         const today = date.getDay();
         return days[today];
-    }	
+    }
 
-    for(let i = 0; i <= jsonObject.length; i++){
-            const dt_txt_field = jsonObject[i].dt_txt;
-            if (dt_txt_field.includes("18:00:00")){
+    const weekDaysHeader = document.createElement('tr');
+    const weatherIcon = document.createElement('tr');
+    const weatherTemp = document.createElement('tr');
+    
+    for(var i = 0; i <= jsonObject.length; i++){
+        const dt_txt_field = jsonObject[i].dt_txt;
+        if (dt_txt_field.includes("18:00:00")){  
             // Generate table headers
             const nextDay = new Date();
             nextDay.setDate(nextDay.getDate() + i);
             const nextWeekDay = weekDays(nextDay);
             const tableHeader = document.createElement("th");
-            tableHeader.textContent = nextWeekDay;    
-            document.querySelector('tr.weekDaysHeader').appendChild(tableHeader);
+            tableHeader.textContent = nextWeekDay;  
+            weekDaysHeader.appendChild(tableHeader);  
+            document.querySelector('thead.table-header').appendChild(tableHeader);
+            //document.querySelector('tr.weekDaysHeader').appendChild(tableHeader);
 
             // Generate weather icons
             const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject[i].weather[0].icon + '.png'; 
@@ -45,12 +51,16 @@ fetch(apiResponseURL)
             weatherImage.setAttribute('src', imagesrc); 
             weatherImage.setAttribute('alt', desc);
             imageTableData.appendChild(weatherImage);
-            document.querySelector('tr.weatherIcon').appendChild(imageTableData);
+            weatherIcon.appendChild(imageTableData);  
+            document.querySelector('thead.table-header').appendChild(weatherIcon);
+            //document.querySelector('tr.weatherIcon').appendChild(imageTableData);
 
             // Generate weather temperature
             const temperature = document.createElement("td");
             temperature.innerHTML = jsonObject[i].main.temp + "&#8457;";
-            document.querySelector('tr.weatherTemp').appendChild(temperature);
+            weatherTemp.appendChild(temperature);  
+            document.querySelector('thead.table-header').appendChild(weatherTemp);
+            //document.querySelector('tr.weatherTemp').appendChild(temperature);  
         }
     }
 });
@@ -79,6 +89,10 @@ function calculateWindChill(tempF, speed){
 // Load wind chill value after all resources are loaded
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "complete") {
+        WindChill.innerHTML = getWindChill();
+    }
+    
+    if (event.target.readyState === "responsive") {
         WindChill.innerHTML = getWindChill();
     }
 });
