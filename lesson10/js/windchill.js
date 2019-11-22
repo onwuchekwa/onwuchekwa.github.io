@@ -3,22 +3,29 @@
 const cityID = "5604473";
 const unitCode = "imperial";
 const appID = "ec4187e2c652e5e5e31629577f8c5a74";
-const apiResponseURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
+const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
+const apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
 
-fetch(apiResponseURL)
+fetch(apiWeatherURL)
+    .then((responseURL) => responseURL.json())
+    .then((jsonWeatherObject) => {
+        const jsonCurrentWeatherObject = jsonWeatherObject;
+        const weatherJsonRoot = jsonCurrentWeatherObject.weather[0];
+    
+        // Get Weather Summary
+        document.getElementById('current-weather').textContent = weatherJsonRoot.main;
+        document.getElementById('temp').textContent = jsonCurrentWeatherObject.main.temp_max;
+        document.getElementById('humid-percent').textContent = jsonCurrentWeatherObject.main.humidity;
+        document.getElementById('wind-speed').textContent = jsonCurrentWeatherObject.wind.speed;
+    
+    });
+
+fetch(apiForecastURL)
   .then((httpResponse) => httpResponse.json())
   .then((weatherJsonObject) => {
     //console.log(weatherJsonObject.list);
     
     const jsonObject = weatherJsonObject.list;
-    const weatherJsonRoot = jsonObject[0].weather[0];
-
-    // Get Weather Summary
-    document.getElementById('current-weather').textContent = weatherJsonRoot.main;
-    document.getElementById('temp').textContent = jsonObject[0].main.temp_max;
-    document.getElementById('humid-percent').textContent = jsonObject[0].main.humidity;
-    document.getElementById('wind-speed').textContent = jsonObject[0].wind.speed;
-
     //Generate Week Days Dynamically
     function weekDays(date){
         const days = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat');
@@ -30,8 +37,8 @@ fetch(apiResponseURL)
     const weatherIcon = document.createElement('tr');
     const weatherTemp = document.createElement('tr');
     
-    for(var i = 0; i <= jsonObject.length; i++){
-        const dt_txt_field = jsonObject[i].dt_txt;
+    for(var i = 0; i < jsonObject.length; i++){
+        let dt_txt_field = jsonObject[i].dt_txt;
         if (dt_txt_field.includes("18:00:00")){  
             // Generate table headers
             const nextDay = new Date(dt_txt_field);
