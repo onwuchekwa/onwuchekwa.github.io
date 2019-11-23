@@ -44,7 +44,7 @@
       padding: 5px;
     }
 
-    #article-container, #contact {
+    #article-container, #contact, .article-container {
       grid-template-columns: 1fr 1fr;
     }
 

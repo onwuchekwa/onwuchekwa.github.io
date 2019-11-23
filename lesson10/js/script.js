@@ -141,11 +141,15 @@ fetch(requestURL)
           pEvent.textContent = eventObj[i].events[j];
           document.querySelector('div.event-panel').appendChild(pEvent);
         }
+        const getTownEventImage = document.createElement('picture');
+        getTownEventImage.setAttribute('class', 'preston-event-image');
+
         const eventImage = document.createElement('img');
         eventImage.setAttribute('class', 'img1');
         eventImage.setAttribute('src', 'images/preston-event.jpg');
         eventImage.setAttribute('alt', eventObj[i].name + 'events');
         getTownEventImage.appendChild(eventImage);
+        document.querySelector('div.article-container').appendChild(getTownEventImage);
       }
     }
   });
