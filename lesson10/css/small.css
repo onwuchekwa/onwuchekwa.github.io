@@ -357,6 +357,18 @@ footer a {
     color: #ffc857;
 }
 
+.town-align, .para-event {
+    text-align: center;
+}
+
+.panel p.para-event {
+    margin: 15px;
+}
+
+hr.town-line {
+    border: 2px solid #a50404;
+}
+
 /*
     Gallery Styles
 */

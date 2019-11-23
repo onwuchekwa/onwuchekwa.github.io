@@ -63,7 +63,7 @@
     table td:last-child, table th:last-child {
         border-right: none;
     }
-
+    
     .no-display {
         display: block;
     }
