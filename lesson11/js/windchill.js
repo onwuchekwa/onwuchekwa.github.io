@@ -1,20 +1,25 @@
 // Get Page Name
 var pagePath=window.location.pathname;
 var pageName = pagePath.substring(pagePath.lastIndexOf('/') + 1);
-var cityID;
+var cityID, apiForecastURL, apiWeatherURL, lat, lon;
 //Preston Weather information
 if (pageName == "preston.html") {
     cityID = "5604473";
+    apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
+    apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
 } else if (pageName == "sodasprings.html"){
     cityID = "5607916";
+    apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
+    apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
 } else {
-    cityID = "5585010";
+    lat = "42.037147";
+    lon = "-111.395942";
+    apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=" + unitCode + "&APPID=" + appID;
+    apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=" + unitCode + "&APPID=" + appID;
 }
 
 const unitCode = "imperial";
 const appID = "ec4187e2c652e5e5e31629577f8c5a74";
-const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
-const apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID + "&units=" + unitCode + "&APPID=" + appID;
 
 fetch(apiWeatherURL)
     .then((responseURL) => responseURL.json())
