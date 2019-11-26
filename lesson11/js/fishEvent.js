@@ -24,7 +24,7 @@ fetch(requestURL)
       const fEventImage = document.createElement('img');
       fEventImage.setAttribute('class', 'img1');
       fEventImage.setAttribute('src', 'images/fish-event.jpg');
-      fEventImage.setAttribute('alt', eventObj[i].name + 'events');
+      fEventImage.setAttribute('alt', eventObj[i].name + ' events');
       fTownEventImage.appendChild(fEventImage);
       document.querySelector('div.fish-article-container').appendChild(fTownEventImage);
     }
