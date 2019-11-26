@@ -4,7 +4,7 @@ fetch(requestURL)
   return responseEvent.json();
 })
 .then(function(townJsonEvent) {
-  console.table(townJsonEvent);
+  //console.table(townJsonEvent);
 
   const eventObj = townJsonEvent['towns'];
   const fTownEventName = document.getElementById('fish-town-header');

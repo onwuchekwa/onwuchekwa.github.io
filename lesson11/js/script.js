@@ -34,7 +34,7 @@ const options = {
 };
 
 const fetchImage = (url) => {
-  console.log(url)
+  //console.log(url)
   return new Promise((resolve, reject) => {
     const image = new Image();
     image.src = url;

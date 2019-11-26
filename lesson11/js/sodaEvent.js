@@ -4,7 +4,7 @@ fetch(requestURL)
   return responseEvent.json();
 })
 .then(function(townJsonEvent) {
-  console.table(townJsonEvent);
+  //sconsole.table(townJsonEvent);
 
   const eventObj = townJsonEvent['towns'];
   const sTownEventName = document.getElementById('soda-town-header');
