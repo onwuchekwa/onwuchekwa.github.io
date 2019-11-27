@@ -2,6 +2,8 @@
 var pagePath=window.location.pathname;
 var pageName = pagePath.substring(pagePath.lastIndexOf('/') + 1);
 var cityID, apiForecastURL, apiWeatherURL, lat, lon;
+const unitCode = "imperial";
+const appID = "ec4187e2c652e5e5e31629577f8c5a74";
 //Preston Weather information
 if (pageName == "preston.html") {
     cityID = "5604473";
@@ -17,9 +19,6 @@ if (pageName == "preston.html") {
     apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=" + unitCode + "&APPID=" + appID;
     apiWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=" + unitCode + "&APPID=" + appID;
 }
-
-const unitCode = "imperial";
-const appID = "ec4187e2c652e5e5e31629577f8c5a74";
 
 fetch(apiWeatherURL)
     .then((responseURL) => responseURL.json())
