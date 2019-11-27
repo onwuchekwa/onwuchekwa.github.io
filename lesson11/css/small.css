@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Share+Tech+Mono|Ubuntu&display=swap');
 body {
-	background-color: #ffffff;
+	background-color: #ffc857;
 	padding: 0;
 	margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -60,7 +60,6 @@ nav {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: #2b0b0b;
-    box-shadow: 0 5px 10px #2b0b0b;
 }
 
 .main-nav li:first-child {
@@ -568,4 +567,13 @@ form label.top input:required:valid {
 .town-card:nth-child(3) {
     order: 2;
     -webkit-order: 2;
+}
+
+/*
+    Thanks Page
+*/
+
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
