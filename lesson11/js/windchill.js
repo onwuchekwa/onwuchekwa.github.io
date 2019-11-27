@@ -2,8 +2,8 @@
 var pagePath=window.location.pathname;
 var pageName = pagePath.substring(pagePath.lastIndexOf('/') + 1);
 var cityID, apiForecastURL, apiWeatherURL, lat, lon;
-const unitCode = "imperial";
-const appID = "ec4187e2c652e5e5e31629577f8c5a74";
+var unitCode = "imperial";
+var appID = "ec4187e2c652e5e5e31629577f8c5a74";
 //Preston Weather information
 if (pageName == "preston.html") {
     cityID = "5604473";
