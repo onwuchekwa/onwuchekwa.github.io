@@ -24,7 +24,7 @@ fetch(requestURL)
       const sEventImage = document.createElement('img');
       sEventImage.setAttribute('class', 'img1');
       sEventImage.setAttribute('src', 'images/soda-event.jpg');
-      sEventImage.setAttribute('alt', eventObj[i].name + ' events');
+      sEventImage.setAttribute('alt', eventObj[i].name + ' ballon events');
       sTownEventImage.appendChild(sEventImage);
       document.querySelector('div.soda-article-container').appendChild(sTownEventImage);
     }

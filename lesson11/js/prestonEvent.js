@@ -24,7 +24,7 @@ fetch(requestURL)
       const eventImage = document.createElement('img');
       eventImage.setAttribute('class', 'img1');
       eventImage.setAttribute('src', 'images/preston-event.jpg');
-      eventImage.setAttribute('alt', eventObj[i].name + ' events');
+      eventImage.setAttribute('alt', eventObj[i].name + ' seafaring events');
       getTownEventImage.appendChild(eventImage);
       document.querySelector('div.article-container').appendChild(getTownEventImage);
     } 
