@@ -1,0 +1,81 @@
+#nav input.menu-icon:checked ~ ul,
+#nav input.menu-icon:checked ~ ul li ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        position: relative;
+        flex: 1;
+
+        a {
+            text-align: center;
+        }
+
+        ul {
+            display: none !important;
+            position: absolute;
+            top: 2.95em;
+            left: 0;
+            display: block;
+            width: 100%;
+            z-index: 200;
+
+            li a {
+                text-align: center;
+                padding-left: 0;
+            }
+        }
+    }
+
+    li:hover > ul {
+        display: block !important;
+    }
+}
+
+#nav label {
+    display: none;
+}
+
+.text-container {   
+    p {
+        font-size: 1.1rem;
+    }  
+}
+
+.temple-article, .card {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Temple Page Style */
+
+.aba-weather-info {
+    left: 30px;
+    width: 50%;
+  }
+
+  .card {
+    grid-auto-flow: dense;
+}
+
+.card > .set-to-the-right {
+    grid-column: 2;
+}
+
+card > .set-to-the-left {
+    grid-column: 1;
+}
+
+

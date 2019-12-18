@@ -1,0 +1,526 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $bodyFontFamily;
+    font-size: $paragraphSize;
+}
+
+h1, h2, h3 {
+    font-family: $mainFontFamily;
+}
+
+/* Header style */
+header {
+	background-color: $reddishColor;
+	display: flex;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
+    padding-top: 5px;
+
+    img {        
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sec-company-info {
+	display: flex;
+    flex-direction: column;
+    
+    h1 {       
+        font-size: $h2Size;
+        margin: 0 0 0 15px;
+        color: $whiteColor;
+    }
+}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: $whiteColor;
+	margin: 8px 0;
+	font-size: $mottoSmall;
+}
+
+/* Navigation style */
+#nav {
+    position: relative;
+
+    ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li a {
+            display: block;
+            text-align: left;
+            padding: .8rem 2%;
+            background-color: $blueColor;
+            color: $whiteColor;
+            text-decoration: none;
+            font-size: $navSizeSmall;
+            font-family: $mainFontFamily; 
+        }
+
+        li.active a {
+            background-color: $yellowColor;
+            color: $blueColor;
+        }
+
+        li.inactive a {
+            background-color: $blueColor;
+            color: $whiteColor;
+        }
+
+        li a:hover {
+            background-color: $whiteColor;
+            color: $blackColor;
+            box-shadow: 5px 5px 5px $blackColor;
+        }
+
+        li ul li a {
+            padding-left: 2em;
+        }
+    }
+
+    input.menu-icon {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    input.menu-icon:checked ~ ul,
+    input.menu-icon:checked ~ ul li ul {
+        display: inline-block;
+    }
+
+    label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: $navSizeSmall;
+        cursor: pointer;
+        background-color: $blueColor;
+        line-height: 2em;
+        color: $whiteColor;
+        font-family: $mainFontFamily;
+    }
+
+    label:after {
+        position: absolute;
+        right: 1em;
+        top: .2em;
+        content: '\2261';
+        font-size: 1.8em;
+        color: $whiteColor;
+    }
+}
+
+header, nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Main Style */
+main {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
+    display: block;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: $h2Size;    
+    color: $blueColor;
+}
+
+h3 {
+    font-size: $h3Size;    
+    color: $blueColor;
+}
+
+.temple-image {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.call-to-action {
+    position: absolute;  
+	top: 55%;
+    left: 25%;
+    width: 50%;    
+    box-sizing: border-box;
+
+    a.link-btn {
+        display: block;
+        border: none;
+        background-color: $blueColor;
+        color: $whiteColor;
+        border-radius: 0.5rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem $gutter;     
+        width: 100%;
+        max-width: 30rem;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+}
+
+.temple-info {
+    border-radius: 5px;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+
+.temple-info-cover { 
+    margin : $gutter auto;
+    display: grid;
+    padding: 0 $gutter;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.temple-card {   
+    padding : 0;
+    overflow : hidden;
+    display : flex;
+    flex-flow : column nowrap;
+    background-color: $yellowColor;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+.text-container {    
+    padding: 25px 10px;          
+    box-sizing: border-box;
+
+    h3 {
+        font-size: $h3Size;
+        color: $blueColor;
+    }
+
+    p {
+        font-size: 1rem;      
+        box-sizing: border-box;
+    }
+}
+
+.temple-card div, .temple-card img {
+    display : block; 
+    width: 100%;
+    height: auto;
+}
+
+.content-box, .temple-content-wrapper {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.content-box {    
+    background-color: $yellowColor;
+}
+
+.temple-article, .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px; 
+    justify-content:center;
+    text-align: center;
+}
+
+.article-wrapper, .contact {
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+}
+
+.contact-detail {
+    display: block;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contact-img, .social-media  {
+    width: 25px;
+    height: auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.no-display {
+    display: none;
+}
+
+.align-left {
+    text-align: left;
+    padding: 0 30px 30px 30px;
+}
+
+.set-alignment {
+    text-align: left;
+}
+
+/* Footer style */
+footer {
+    width: 100%;
+    font-family: $bodyFontFamily;
+    font-size: $footerSize;  
+    line-height: 1.5em;
+	background-color: $reddishColor;  
+    color: $whiteColor;
+	display: flex;
+    flex: 0 1 100%;
+	align-items:center;
+    justify-content:center;
+    text-align: center;
+
+    a {
+        color: $whiteColor;
+    }
+}
+
+/* Temple Page Style */
+.temple-page-intro img {
+    width: 100%;
+    height: auto;
+}
+
+.img1 {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 10px; 
+}
+
+.card-wrapper {
+    margin: 0;
+    padding: 0;
+}
+.card {
+    background-color: $yellowColor;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    border-radius: 10px; 
+    margin-top: 20px;
+}
+
+.temple-info-card {
+    box-sizing: border-box;
+}
+
+
+.accordion {
+    background-color: $blueColor;
+    color: $whiteColor;
+    cursor: pointer;
+    padding: .75rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.accordion-active, .accordion:hover {
+    background-color: $whiteColor;
+    color: $blackColor;
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    background-color: $reddishColor;
+    color: $whiteColor;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: $reddishColor;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion-active:after {
+    content: '\2796';
+}
+
+.temple-hero-weather { 
+    position: relative;
+}
+
+.temple-hero-weather h3 {
+    margin: 0;
+    color: $whiteColor;
+}
+
+.temple-weather-info {
+	position: absolute;
+	top: 40px;
+    left: 10px;
+	background: radial-gradient($reddishColor, $blackColor);
+	border: 2px solid $blueColor;
+	padding: 0.5rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+    opacity: 0.8;
+    width: 55%;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: 2px solid $blueColor;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.table-grid > span {
+    padding: 2px;
+}
+
+.head-content {
+    text-align: right;
+    color: $whiteColor;
+}
+
+.head-value {
+    text-align: left;
+    color: $whiteColor;
+}
+
+/* Reservation Page Style */
+
+.section-container {
+    text-align: left;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.form-container, .message-container {
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $yellowColor;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1);
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 0 7%;    
+}
+
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid $blueColor;
+    border-radius: 10px;
+    padding: .5rem 2%;    
+    box-sizing: border-box;
+}
+
+form legend {
+    color: $blueColor;
+    font-size: $h3Size;
+    margin: 0 1rem;
+    padding: 0 .5rem;  
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+    display: block;
+    border: 1px solid $blueColor;
+    border-radius: 5px;
+    padding: .75rem;
+    max-width: 20rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);    
+    box-sizing: border-box;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: $reddishColor;
+    color: $whiteColor;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;     
+    width: 96%;
+    max-width: 20rem;
+    box-sizing: border-box;
+}
+
+form label.top input:required {
+    border-left: 6px solid $reddishColor;
+}
+
+form label.top input:required:valid {
+    border-left: 6px solid $greenColor;
+}
+
+.message-container {
+    text-align: center;
+}
+
+/* Missionary Page Style */
+.contactUs {
+    display: block;
+    border: none;
+    background-color: $blueColor;
+    color: $whiteColor;
+    border-radius: 0.5rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem $gutter;     
+    width: 100%;
+    max-width: 30rem;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+}

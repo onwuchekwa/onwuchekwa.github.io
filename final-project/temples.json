@@ -1,0 +1,151 @@
+{
+    "temples" : [
+        {
+            "name": "Aba Nigeria Temple",
+            "address": "#72-80 Okpu-Umuobo Rd, Aba, Abia State, Nigeria",
+            "phone": "(234) 80-3903-4804",
+            "email": "abatemple@churchofjesuschrist.org",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "2 April 2000, Announced",
+                "23 February 2002, Groundbreaking",
+                "7 August 2005, Dedicated"
+            ],
+            "ordinance_schedule": [
+                "Baptisms: Saturdays 8:00 AM - 12:00 noon, Family Priority Time, Walk-ins, and Appointments",
+                "Sealings: Tuesdays - Saturdays 7:00 AM - 18:00, Walk-ins and Appointments"
+            ],
+            "session_schedule": [
+                "Tuesdays - Fridays: 8:30, 10:30, 12:30, 14:30, 16:30, 18:30",
+                "Saturdays: 8:30, 10:30, 12:30, 14:30, 16:30"
+            ],
+            "closures": [ 
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019",
+                "Wednesday, 1 January 2020",
+                "Monday, 2 March 2020 - Monday, 16 March 2020",
+                "Saturday, 15 August 2020",
+                "Monday, 7 September 2020 - Monday, 21 September 2020",
+                "Thursday, 24 December 2020 - Saturday, 26 December 2020" 
+            ]
+        },
+        {
+            "name": "Accra Ghana Temple",
+            "address": "Accra Ghana Temple Complex, 57 Independence Ave, North Ridge, Accra, Ghana",
+            "phone": "(233) 302-650-123",
+            "email": "accratemple@churchofjesuschrist.org",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "16 February 1998, Announced",
+                "16 November 2001, Groundbreaking",
+                "11 January 2004, Dedicated"
+            ],
+            "ordinance_schedule": [
+                "Baptisms: Tuesdays - Fridays 8:00 - 20:00, Saturday 8:00 - 14:00, Walk-ins and Appointments",
+                "Sealings: Tuesdays - Fridays 8:00 - 20:00, Saturday 8:00 - 14:00, Walk-ins and Appointments"
+            ],
+            "session_schedule": [
+                "Tuesdays - Fridays: 7:00, 8:30, 10:30, 12:30, 14:30, 16:30, 18:30", 
+                "Saturdays: 7:00, 8:30, 10:30, 12:30, 14:30"
+            ],
+            "closures": [
+                "Wednesday, 1 January 2020",
+                "Monday, 17 February 2020 - Monday, 2 March 2020",
+                "Friday, 6 March 2020",
+                "Wednesday, 1 July 2020",
+                "Monday, 7 September 2020 - Monday, 9 November 2020",
+                "Friday, 25 December 2020 - Saturday, 26 December 2020"
+            ]
+        },
+        {
+            "name": "Kinshasa Democratic Republic of the Congo Temple",
+            "address": "50 Croisement Avenue de l’ OUA / Milolo, Quartier Basoko GB, Commune de Ngaliema, Ville de Kinshasa, Democratic Republic of Congo",
+            "phone": "(243) 815-590-060",
+            "email": "kinshasatemple@churchofjesuschrist.org",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "1 October 2011, Announced",
+                "12 February 2016, Groundbreaking",
+                "14 April 2019, Dedicated"
+            ],
+            "ordinance_schedule": [
+                "Baptisms: Saturdays 7:30 AM - 12:00 noon, Walk-ins and Appointments",
+                "Sealings: Tuesdays - Saturdays 7:00 - 12:15, Walk-ins and Appointments"
+            ],
+            "session_schedule": [
+                "Tuesdays - Saturdays: 8:00, 10:30, 12:45"
+            ],
+            "closures": [
+                "Wednesday, 25 December 2019",
+                "Wednesday, 1 January 2020",
+                "Saturday, 4 January 2020",
+                "Thursday, 16 January 2020 - Friday, 17 January 2020",
+                "Monday, 30 March 2020 - Monday, 13 April 2020",
+                "Friday, 1 May 2020",
+                "Tuesday, 30 June 2020",
+                "Saturday, 1 August 2020",
+                "Monday, 19 October 2020 - Monday, 2 November 2020",
+                "Friday, 25 December 2020"
+            ]
+        },
+        {
+            "name": "Johannesburg South Africa Temple",
+            "address": "7 Jubilee Rd., Parktown, Johannesburg, 2193, South Africa",
+            "phone": "(27) 11-645-1540",
+            "email": "johannesburgtemple@churchofjesuschrist.org",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "1 April 1981, Announced",
+                "27 November 1982, Groundbreaking",
+                "24 August 1985, Dedicated"
+            ],
+            "ordinance_schedule": [
+                "Baptisms: Thursdays 17:30 - 20:30, Family Priority Time - Appointments Only",
+                "Baptisms: Saturdays 10:30 - 12:00 noon, Family Priority Time - Walk-ins and Appointments",
+                "Baptisms: Wednesdays 9:00 - 12:00 noon, Family Priority Time - Walk-ins and Appointments",
+                "Baptisms: Saturdays 17:30 - 20:30, Church Groups - Walk-ins and Appointments",
+                "Sealings: Tuesdays - Fridays 15:00 - 20:00, Walk-ins and Appointments",
+                "Sealings: Saturdays 7:00 - 14:00, Walk-ins and Appointments"
+            ],
+            "session_schedule": [
+                "Tuesday - Friday: 6:00, 7:00, 8:00, 8:30, 9:00, 10:00, 15:00, 16:00, 17:00, 18:00 Walk-ins and Appointments", 
+                "Saturday: 6:00, 7:00, 8:00, 8:30, 9:00, 10:00, 11:00, 12:00 Walk-ins and Appointments"
+            ],
+            "closures": [
+                "Tuesday, 24 December 2019 - Thursday, 26 December 2019 (Limited Hours)",
+                "Tuesday, 31 December 2019 - Wednesday, 1 January 2020 (Limited Hours)",
+                "Monday, 10 February 2020 - Monday, 24 February 2020",
+                "Saturday, 21 March 2020 (Limited Hours)",
+                "Friday, 10 April 2020 - Saturday, 11 April 2020 (Limited Hours)",
+                "Friday, 1 May 2020 (Limited Hours)",
+                "Tuesday, 16 June 2020 (Limited Hours)",
+                "Monday, 27 July 2020 - Monday, 28 September 2020",
+                "Thursday, 24 September 2020 (Limited Hours)",
+                "Saturday, 10 October 2020 (Limited Hours)",
+                "Wednesday, 16 December 2020 (Limited Hours)",
+                "Thursday, 24 December 2020 - Saturday, 26 December 2020 (Limited Hours)",
+                "Thursday, 31 December 2020 (Limited Hours)"
+            ]
+        }
+    ]
+
+}

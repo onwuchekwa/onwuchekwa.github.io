@@ -1,0 +1,81 @@
+.sec-company-info h1 {
+    font-size: $h1Size;
+}
+
+.motto {
+	font-size: $motto;
+}
+
+.call-to-action {
+    top: 70%;    
+    left: 30%;
+
+    button.link-btn {
+        font-size: 1.4em;
+    }
+}
+
+
+.temple-info-cover {
+    grid-template-columns : 1fr; 
+}
+
+.temple-card img {
+    max-width : 30%;
+} 
+
+.temple-card,  .temple-card:nth-child(odd) {
+    flex-flow : row nowrap;
+}
+
+.temple-card:nth-child(even) {
+    flex-flow : row-reverse nowrap;
+}
+
+.text-container p {
+    font-size: 1.05em;
+}
+
+.contact-img, .social-media  {
+    width: 30px;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 290px;
+    border: 0;    
+    border-radius: 10px;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:290px;
+    width:100%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1); 
+    border-radius: 10px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:290px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.no-display {
+    display: block;
+}
+
+/* Temple Page Style */
+
+.aba-weather-info {
+    left: 30px;
+    width: 45%;
+  }
+
+  .table-grid > span {
+    padding: 5px;
+  }
