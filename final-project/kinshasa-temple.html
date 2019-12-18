@@ -66,14 +66,14 @@
             
             <section class="temple-content-wrapper">
                 <h2>Temples</h2>
-                <div class="card-wrapper">                
-                    <!-- Aba Nigeria Temple -->  
+                <div class="card-wrapper"> 
+                    <!-- Kinshasa Democratic Republic of the Congo Temple Temple -->
                     <div class="card">
                         <div class="temple-hero-weather">                    
-                            <picture>
-                                <source media="(min-width: 60em)" srcset="images/aba-temple700.jpg">
-                                <source media="(min-width: 37.5em)" srcset="images/aba-temple700.jpg">
-                                <img src="images/aba-temple400.jpg" class="img1" alt="aba temple full view">
+                            <picture id="kinshasaPicture">
+                                <source media="(min-width: 60em)" srcset="images/kinshasa-temple700.jpg">
+                                <source media="(min-width: 37.5em)" srcset="images/kinshasa-temple700.jpg">
+                                <img src="images/kinshasa-temple400.jpg" class="img1" alt="kinshasa temple full view">
                             </picture>
 
                             <div class="temple-weather-info">
@@ -81,103 +81,52 @@
                                 <hr>
                                 <div class="table-grid">
                                     <span class="head-content">Currently:</span> 
-                                    <span class="head-value"><span id="abaCurrentWeather"></span></span>
+                                    <span class="head-value"><span id="kCurrentWeather"></span></span>
         
                                     <span class="head-content">High:</span> 
-                                    <span class="head-value"><span id="abaTemp"></span>&#8457;</span>
+                                    <span class="head-value"><span id="kTemp"></span>&#8457;</span>
         
                                     <span class="head-content">Wind Chill:</span>
-                                    <span class="head-value"><span id="abaWindChill"></span></span>
+                                    <span class="head-value"><span id="kWindChill"></span></span>
         
                                     <span class="head-content">Humidity:</span>
-                                    <span class="head-value"><span id="abaHumidPercent"></span>%</span>
+                                    <span class="head-value"><span id="kHumidPercent"></span>%</span>
         
                                     <span class="head-content">Wind Speed:</span>
-                                    <span class="head-value"><span id="abaWindSpeed"></span>mph</span>
+                                    <span class="head-value"><span id="kWindSpeed"></span>mph</span>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="temple-info-card">
-                            <h3 id="abaTempleName">Aba</h3>
-                            <button class="accordion" id="abaTempleContact"></button>
-                            <div class="accordion-panel" id="accordionContact"></div>
+                            <h3 id="kTempleName">Kinshasa</h3>
+                            <button class="accordion" id="kTempleContact"></button>
+                            <div class="accordion-panel" id="kaccordionContact"></div>
 
-                            <button class="accordion" id="abaTempleServices"></button>
-                            <div class="accordion-panel" id="accordionServices"></div>
+                            <button class="accordion" id="kTempleServices"></button>
+                            <div class="accordion-panel" id="kaccordionServices"></div>
 
-                            <button class="accordion" id="abaTempleHistory"></button>
-                            <div class="accordion-panel" id="accordionHistory"></div>
+                            <button class="accordion" id="kTempleHistory"></button>
+                            <div class="accordion-panel" id="kaccordionHistory"></div>
 
-                            <button class="accordion" id="abaTempleOrdinance"></button>
-                            <div class="accordion-panel" id="accordionOrdinance"></div>
+                            <button class="accordion" id="kTempleOrdinance"></button>
+                            <div class="accordion-panel" id="kaccordionOrdinance"></div>
 
-                            <button class="accordion" id="abaTempleSession"></button>
-                            <div class="accordion-panel" id="accordionSession"></div>
+                            <button class="accordion" id="kTempleSession"></button>
+                            <div class="accordion-panel" id="kaccordionSession"></div>
 
-                            <button class="accordion" id="abaTempleClosure"></button>
-                            <div class="accordion-panel" id="accordionClosure"></div>
+                            <button class="accordion" id="kTempleClosure"></button>
+                            <div class="accordion-panel" id="kaccordionClosure"></div>
                         </div>                    
                     </div>  
-                    <!-- End Aba Nigeria Temple -->
-
-                    <!-- Accra Ghana Temple -->
-                    <div class="card">
-                        <div class="temple-hero-weather set-to-the-right">                    
-                            <picture>
-                                <source media="(min-width: 60em)" srcset="images/accra-temple700.jpg">
-                                <source media="(min-width: 37.5em)" srcset="images/accra-temple700.jpg">
-                                <img src="images/accra-temple400.jpg" class="img1" alt="accra temple full view">
-                            </picture>
-
-                            <div class="temple-weather-info">
-                                <h3>Weather Summary</h3>
-                                <hr>
-                                <div class="table-grid">
-                                    <span class="head-content">Currently:</span> 
-                                    <span class="head-value"><span id="accraCurrentWeather"></span></span>
-        
-                                    <span class="head-content">High:</span> 
-                                    <span class="head-value"><span id="accraTemp"></span>&#8457;</span>
-        
-                                    <span class="head-content">Wind Chill:</span>
-                                    <span class="head-value"><span id="accraWindChill"></span></span>
-        
-                                    <span class="head-content">Humidity:</span>
-                                    <span class="head-value"><span id="accraHumidPercent"></span>%</span>
-        
-                                    <span class="head-content">Wind Speed:</span>
-                                    <span class="head-value"><span id="accraWindSpeed"></span>mph</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="temple-info-card set-to-the-left">
-                            <h3 id="accraTempleName">Accra</h3>
-                            <button class="accordion" id="accraTempleContact"></button>
-                            <div class="accordion-panel" id="accraaccordionContact"></div>
-
-                            <button class="accordion" id="accraTempleServices"></button>
-                            <div class="accordion-panel" id="accraaccordionServices"></div>
-
-                            <button class="accordion" id="accraTempleHistory"></button>
-                            <div class="accordion-panel" id="accraaccordionHistory"></div>
-
-                            <button class="accordion" id="accraTempleOrdinance"></button>
-                            <div class="accordion-panel" id="accraaccordionOrdinance"></div>
-
-                            <button class="accordion" id="accraTempleSession"></button>
-                            <div class="accordion-panel" id="accraaccordionSession"></div>
-
-                            <button class="accordion" id="accraTempleClosure"></button>
-                            <div class="accordion-panel" id="accraaccordionClosure"></div>
-                        </div>                    
-                    </div>  
-                    <!-- End Accra Ghana Temple -->
-                </div>
-            </section> 
-                            
-            <div class="temple-nav"><a class="contactUs" href="temple2.html">Next Temple Page >></a></div>
+                    <!-- End Kinshasa Democratic Republic of the Congo Temple Temple -->
+                </div> 
+            </section>
+            <div class="temple-nav">
+                <a class="temple-nav-btn" href="aba-temple.html">Aba Temple</a>
+                <a class="temple-nav-btn" href="accra-temple.html">Accra Temple</a>
+                <a class="temple-nav-btn" href="johannesburg-temple.html">Johannesburg Temple</a>
+            </div>
 
             <div class="content-box">
                 <div class="temple-article">           
@@ -229,8 +178,8 @@
     <!-- End of Page Footer-->
     <!-- JavaScript Files -->
     <script src="js/script.js"></script>
-    <script src="js/templeData.js"></script>
-    <script src="js/templeWeather.js"></script>
+    <script src="js/kinshasaTempleData.js"></script>
+    <script src="js/kinshasaTempleWeather.js"></script>
     <!-- End of JavaScript Files -->
 </body>
 </html>

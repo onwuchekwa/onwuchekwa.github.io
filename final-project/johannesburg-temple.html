@@ -66,61 +66,7 @@
             
             <section class="temple-content-wrapper">
                 <h2>Temples</h2>
-                <div class="card-wrapper"> 
-                    <!-- Kinshasa Democratic Republic of the Congo Temple Temple -->
-                    <div class="card">
-                        <div class="temple-hero-weather">                    
-                            <picture id="kinshasaPicture">
-                                <source media="(min-width: 60em)" srcset="images/kinshasa-temple700.jpg">
-                                <source media="(min-width: 37.5em)" srcset="images/kinshasa-temple700.jpg">
-                                <img src="images/kinshasa-temple400.jpg" class="img1" alt="kinshasa temple full view">
-                            </picture>
-
-                            <div class="temple-weather-info">
-                                <h3>Weather Summary</h3>
-                                <hr>
-                                <div class="table-grid">
-                                    <span class="head-content">Currently:</span> 
-                                    <span class="head-value"><span id="kCurrentWeather"></span></span>
-        
-                                    <span class="head-content">High:</span> 
-                                    <span class="head-value"><span id="kTemp"></span>&#8457;</span>
-        
-                                    <span class="head-content">Wind Chill:</span>
-                                    <span class="head-value"><span id="kWindChill"></span></span>
-        
-                                    <span class="head-content">Humidity:</span>
-                                    <span class="head-value"><span id="kHumidPercent"></span>%</span>
-        
-                                    <span class="head-content">Wind Speed:</span>
-                                    <span class="head-value"><span id="kWindSpeed"></span>mph</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="temple-info-card">
-                            <h3 id="kTempleName">Kinshasa</h3>
-                            <button class="accordion" id="kTempleContact"></button>
-                            <div class="accordion-panel" id="kaccordionContact"></div>
-
-                            <button class="accordion" id="kTempleServices"></button>
-                            <div class="accordion-panel" id="kaccordionServices"></div>
-
-                            <button class="accordion" id="kTempleHistory"></button>
-                            <div class="accordion-panel" id="kaccordionHistory"></div>
-
-                            <button class="accordion" id="kTempleOrdinance"></button>
-                            <div class="accordion-panel" id="kaccordionOrdinance"></div>
-
-                            <button class="accordion" id="kTempleSession"></button>
-                            <div class="accordion-panel" id="kaccordionSession"></div>
-
-                            <button class="accordion" id="kTempleClosure"></button>
-                            <div class="accordion-panel" id="kaccordionClosure"></div>
-                        </div>                    
-                    </div>  
-                    <!-- End Kinshasa Democratic Republic of the Congo Temple Temple -->
-
+                <div class="card-wrapper">
                     <!-- Johannesburg South Africa Temple -->
                     <div class="card">
                         <div class="temple-hero-weather set-to-the-right">                    
@@ -176,7 +122,11 @@
                     <!-- End Johannesburg South Africa Temple -->
                 </div> 
             </section>
-            <div class="temple-nav"><a class="contactUs" href="temple.html"><< Previous Temple Page</a></div>
+            <div class="temple-nav">
+                <a class="temple-nav-btn" href="aba-temple.html">Aba Temple</a>
+                <a class="temple-nav-btn" href="accra-temple.html">Accra Temple</a>
+                <a class="temple-nav-btn" href="kinshasa-temple.html">Kinshasa Temple</a>
+            </div>
 
             <div class="content-box">
                 <div class="temple-article">           
@@ -228,8 +178,8 @@
     <!-- End of Page Footer-->
     <!-- JavaScript Files -->
     <script src="js/script.js"></script>
-    <script src="js/templeData2.js"></script>
-    <script src="js/templeWeather2.js"></script>
+    <script src="js/johannesburgTempleData.js"></script>
+    <script src="js/johannesburgTempleWeather.js"></script>
     <!-- End of JavaScript Files -->
 </body>
 </html>

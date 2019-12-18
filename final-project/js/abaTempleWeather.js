@@ -1,11 +1,8 @@
 var unitCode = "imperial";
 var appID = "ec4187e2c652e5e5e31629577f8c5a74";
 var abaLat = 5.147793, abaLon = 7.356660;
-var accraLat = 5.567451, accraLon = -0.193666;
 
 var  abaWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + abaLat + "&lon=" + abaLon + "&units=" + unitCode + "&APPID=" + appID;
-
-var  accraWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + accraLat + "&lon=" + accraLon + "&units=" + unitCode + "&APPID=" + appID;
 
 //Aba Nigeria Weather
 fetch(abaWeatherURL)
@@ -22,29 +19,10 @@ fetch(abaWeatherURL)
 
 });
 
-//Accra Ghana Weather
-fetch(accraWeatherURL)
-.then((accraResponseURL) => accraResponseURL.json())
-.then((accraWeatherObject) => {
-    const accraCurrentWeather = accraWeatherObject;
-    const accraWeather = accraCurrentWeather.weather[0];
-
-    // Get Weather Summary
-    document.getElementById('accraCurrentWeather').textContent = accraWeather.main;
-    document.getElementById('accraTemp').textContent = accraCurrentWeather.main.temp_max;
-    document.getElementById('accraHumidPercent').textContent = accraCurrentWeather.main.humidity;
-    document.getElementById('accraWindSpeed').textContent = accraCurrentWeather.wind.speed;
-
-});
-
 //WindChill calculator
 var abaWindChill = document.getElementById("abaWindChill");
 var abaTemp = parseFloat(document.getElementById("abaTemp").textContent);
 var abaWindSpeed = parseFloat(document.getElementById("abaWindSpeed").textContent);
-
-var accraWindChill = document.getElementById("accraWindChill");
-var accraTemp = parseFloat(document.getElementById("accraTemp").textContent);
-var accraWindSpeed = parseFloat(document.getElementById("accraWindSpeed").textContent);
 
 function getWindChill(temp, winds){
     var tempF = temp;
@@ -68,11 +46,9 @@ function calculateWindChill(tempF, speed){
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "complete") {
         abaWindChill.innerHTML = getWindChill(abaTemp, abaWindSpeed);
-        accraWindChill.innerHTML = getWindChill(accraTemp, accraWindSpeed);
     }
     
     if (event.target.readyState === "responsive") {
         abaWindChill.innerHTML = getWindChill(abaTemp, abaWindSpeed);
-        accraWindChill.innerHTML = getWindChill(accraTemp, accraWindSpeed);
     }
 });

@@ -1,27 +1,8 @@
 var unitCode = "imperial";
 var appID = "ec4187e2c652e5e5e31629577f8c5a74";
 var kinshasaLat = -4.327345, kinshasaLon = 15.273766;
-var johannesburgLat = -26.177933, johannesburgLon =  28.039280;
 
 var  kinshasaWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + kinshasaLat + "&lon=" + kinshasaLon + "&units=" + unitCode + "&APPID=" + appID;
-
-var  johannesburgWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + johannesburgLat + "&lon=" + johannesburgLon + "&units=" + unitCode + "&APPID=" + appID;
-
-
-//Johanessburg South Africa Weather
-fetch(johannesburgWeatherURL)
-.then((jsaResponseURL) => jsaResponseURL.json())
-.then((jsaWeatherObject) => {
-    const jsaCurrentWeather = jsaWeatherObject;
-    const jsaWeather = jsaCurrentWeather.weather[0];
-
-    // Get Weather Summary
-    document.getElementById('saCurrentWeather').textContent = jsaWeather.main;
-    document.getElementById('saTemp').textContent = jsaCurrentWeather.main.temp_max;
-    document.getElementById('saHumidPercent').textContent = jsaCurrentWeather.main.humidity;
-    document.getElementById('saWindSpeed').textContent = jsaCurrentWeather.wind.speed;
-
-});
 
 //Kinshasa Congo Weather
 fetch(kinshasaWeatherURL)
@@ -39,10 +20,6 @@ fetch(kinshasaWeatherURL)
 });
 
 //WindChill calculator
-var saWindChill = document.getElementById("saWindChill");
-var saTemp = parseFloat(document.getElementById("saTemp").textContent);
-var saWindSpeed = parseFloat(document.getElementById("saWindSpeed").textContent);
-
 var kWindChill = document.getElementById("kWindChill");
 var kTemp = parseFloat(document.getElementById("kTemp").textContent);
 var kWindSpeed = parseFloat(document.getElementById("kWindSpeed").textContent);
@@ -68,12 +45,10 @@ function calculateWindChill(tempF, speed){
 // Load wind chill value after all resources are loaded
 document.addEventListener('readystatechange', event => {
     if (event.target.readyState === "complete") {
-        saWindChill.innerHTML = getWindChill(saTemp, saWindSpeed);
         kWindChill.innerHTML = getWindChill(kTemp, kWindSpeed);
     }
     
     if (event.target.readyState === "responsive") {
-        saWindChill.innerHTML = getWindChill(saTemp, saWindSpeed);
         kWindChill.innerHTML = getWindChill(kTemp, kWindSpeed);
     }
 });
