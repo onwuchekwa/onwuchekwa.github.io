@@ -9,7 +9,7 @@
     <meta name="author" content="Sunday Ogbonnaya Onwuchekwa">
     <!-- End of Webpage Metadata -->
 
-    <title>Temple Inn &amp; Suites | Reservation</title>
+    <title>Temple Inn &amp; Suites | Attributionu</title>
 
     <!-- Stylesheets -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -42,7 +42,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="temple.html" >Temple</a></li>
-            <li class="active"><a href="reservation.html">Reservation</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
             <li><a href="services.html">Services</a>
                 <ul>
                     <li><a href="reception.html">Reception</a></li>
@@ -57,74 +57,21 @@
     <div class="content-wrapper">
     <!-- Main Contents -->
         <main>
-            <section class="section-container">
-                <h2>Make a Reservation</h2>
-                <div class="form-container">   
-                    <form method="GET" action="thankyou.html">
-                        <fieldset>
-                            <legend>Contact Information</legend>
-                            <label class="top">
-                                Full Name *
-                                <input type="text" name="fullname" pattern="[A-Za-z ]+" minlength="3" required>
-                            </label>
-
-                            <label class="top">
-                                Email
-                                <input type="email" name="email" placeholder="someone@templeinnandsuites.com">
-                            </label>
-
-                            <label class="top">
-                                Phone Number *
-                                <input type="tel" name="phone" placeholder="999-999-9999" required>
-                            </label>
-                        
-                            <label class="top">
-                                Home State or Country *
-                                <input type="text" name="country" minlength="2" required>
-                            </label>
-                        </fieldset>
-    
-                        <fieldset>
-                            <legend>Reservation Details</legend>
-                            <label class="top">
-                                Location *
-                                <select name="templeLocation" required>
-                                    <option value="" selected disabled>Select a Temple</option>
-                                    <option value="aba">Aba Nigeria</option>
-                                    <option value="accra">Accra Ghana</option>
-                                    <option value="johannesbury">Johannesburg South Africa</option>
-                                    <option value="kinshasa">Kinshasa Democratic Republic of Congo</option>
-                                </select>
-                            </label>        
-
-                            <label class="top">
-                                Check-in Date *
-                                <input type="date" name="checkInDate" required>
-                            </label>
-
-                            <label class="top">
-                                Number of Room(s) *
-                                <input type="number" name="roomnumber" min="1" required>
-                            </label>
-    
-                            <label class="top">
-                                Type of Room *
-                                <input name="roomtype" list="roomlist" required>
-                                <datalist id="roomlist">
-                                    <option value="Deluxe"></option>
-                                    <option value="Executive"></option>
-                                    <option value="Presidential"></option>
-                                    <option value="Standard"></option>
-                                </datalist>
-                            </label> 
-    
-                            <label class="top">
-                                Special Accomodations or Comments
-                                <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-                            </label>
-                        </fieldset>
-                        <input type="submit" value="Make My Reservation" class="submitBtn">
-                    </form>
+            <section class="section-container"> 
+                <h2>Attributions</h2>
+                <div class="message-container"> 
+                    <p>
+                       List of Temples: <a href="https://www.lds.org/temples/list" target="_blank" rel="noopener">https://www.lds.org/temples/list</a> 
+                    </p>
+                    <p>
+                       Weather Powered By: <a href="https://openweathermap.org/api" target="_blank" rel="noopener">https://openweathermap.org/api</a> 
+                    </p> 
+                    <p>  
+                       Aba Temple Information: <a href="https://churchofjesuschristtemples.org/" target="_blank" rel="noopener">https://churchofjesuschristtemples.org</a> 
+                    </p>
+                    <p>   
+                       Temple Images: <a href="https://www.churchofjesuschrist.org/" target="_blank" rel="noopener">https://www.churchofjesuschrist.org</a> 
+                    </p>
                 </div>
             </section>
 
@@ -173,7 +120,7 @@
     <!-- Page Footer -->
     <footer>
         <p>
-            &copy; <span id="current-year"></span> Temple Inn &amp; Suites | <a href="attribution.html">Attributions</a> | Sunday O. Onwuchekwa
+           &copy; <span id="current-year"></span> Temple Inn &amp; Suites | <a href="attribution.html">Attributions</a> | Sunday O. Onwuchekwa
         </p>
     </footer>
     <!-- End of Page Footer-->
