@@ -1,0 +1,76 @@
+/*
+  Yellow: fffe06
+  Blue: 5701c2
+*/
+.bg-dark {
+  background: #5701c2 !important;
+}
+
+.jumbotron {
+  text-align: center;
+  background: none;
+  padding: 2rem 2rem;
+}
+
+.sectionLight {
+  background-color: #eceeef;
+  padding: 2rem;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin-top: 20px;
+}
+
+button.coolStuffBtn {
+  background-color: #5701c2;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+h5.modal-title {
+  margin: auto;
+}
+
+.modalFormWrapper {
+  padding: 2rem;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.btn-bg {
+  background-color: #5701c2;
+  color: #ffffff;
+}
+
+.footerImg {
+  padding: 15px;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.socialWrapper {
+  margin: auto;
+}
+
+.socialWrapper > a > i {
+  color: #ffffff;
+}
