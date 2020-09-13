@@ -2,14 +2,24 @@
   Yellow: fffe06
   Blue: 5701c2
 */
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .bg-dark {
   background: #5701c2 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .display-4 {
+  font-weight: bold;
 }
 
 .jumbotron {
   text-align: center;
   background: none;
-  padding: 2rem 2rem;
+  padding: 0;
 }
 
 .sectionLight {
@@ -27,8 +37,6 @@
 }
 
 button.coolStuffBtn {
-  background-color: #5701c2;
-  color: #ffffff;
   display: block;
   margin: auto;
 }
@@ -59,6 +67,74 @@ h5.modal-title {
   color: #ffffff;
 }
 
+.btn-bg:hover {
+  background-color: #fffe06;
+  color: #5701c2;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 100%;
+}
+
+.image-left {
+  float: left;
+}
+
+.image-right {
+  float: right;
+}
+
+.circular-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px;
+  shape-outside: circle();
+}
+
+.img-container img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ max-width: 100%;
+ height: auto;
+ object-fit: cover;
+}
+
+.working-hours {
+  margin-top: 20px;
+}
+
+.card-container, .card-team, .card-services {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 2%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+  padding: 16px;
+}
+
+.img-card {
+  max-height: 80px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
 .footerImg {
   padding: 15px;
 }
@@ -73,4 +149,23 @@ h5.modal-title {
 
 .socialWrapper > a > i {
   color: #ffffff;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .jumbotron {
+    padding: 2rem 2rem;
+  }
+
+  .card-container, .card-team, .card-services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-services {
+    grid-template-columns: repeat(9, 1fr);
+  }
 }
